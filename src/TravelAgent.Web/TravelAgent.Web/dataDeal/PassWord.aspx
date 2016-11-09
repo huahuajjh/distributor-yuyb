@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PassWord.aspx.cs" Inherits="TravelAgent.Web.dataDeal.PassWord" %>

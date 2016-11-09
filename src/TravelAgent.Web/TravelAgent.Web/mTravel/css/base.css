@@ -1,0 +1,92 @@
+/**
+ * Created by fu.
+ * Date: 12-5-31
+ * Time: ÉÏÎç11:43
+ */
+
+/* reset
+-------------------------------------------------------------- */
+html, body, blockquote, dd, dl, fieldset, legend,
+h1,h2, h3, h4, h5, h6, hr, ol, p, pre, ul, th, td, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, iframe, img { border: 0; }
+
+address, cite, code, em, ins, kbd, pre, samp, strong, sub, sup, var {
+    font-family: inherit;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, sub, sup {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+input, button, textarea, select { *font-size: 100%; }
+
+input, button, textarea { font: inherit; }
+
+ol, ul { list-style: none; }
+
+q:before, q:after { content: ''; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*base
+-------------------------------------------------------------- */
+body { font-size: 12px; font-family: "\5B8B\4F53", serif; line-height: 1.5; color: #5d5d5d; }
+
+h1 { font-size: 2.2em; }
+
+h2 { font-size: 2.0em; }
+
+h3 { font-size: 1.8em; }
+
+h4 { font-size: 1.6em; }
+
+h5 { font-size: 1.4em; }
+
+h6 { font-size: 1.2em; }
+
+a {color: #333; text-decoration: none; font-size:1.4rem;}
+
+a:hover{ text-decoration: underline; outline: 0; }
+
+input:focus, textarea:focus { outline: 0; }
+
+textarea { overflow-y: auto; }
+
+input, img { vertical-align: middle; }
+
+.clearfix:after,.row:after{
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix,.row { zoom: 1; }
+.clear{clear: both;}
+.error{ color: #f00;}
+
+.hl_bd{ padding: 10px 0;}
+.hl_bd .widget_crumbs{ width: 980px; margin: auto; margin-bottom: 10px;}
+/*all
+-------------------------------------------------------------- */
+.fl{ float: left;}
+.fr{ float: right;}
+/*header
+-------------------------------------------------------------- */
+
+/*banner
+-------------------------------------------------------------- */
+
+/*content
+-------------------------------------------------------------- */
+
+/*footer
+-------------------------------------------------------------- */

@@ -1,0 +1,101 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+namespace TravelAgent.IDAL
+{
+    public interface IOrder
+    {
+        /// <summary>
+        /// 取得最新插入的ID
+        /// </summary>
+        int GetMaxID(string FieldName);
+        /// <summary>
+        /// 返回长查询数据总数 （分页用到）
+        /// </summary>
+        int GetCount(string strWhere);
+         /// <summary>
+        /// 返回长查询数据总数 （分页用到）
+        /// </summary>
+        int GetCount2(string strWhere);
+          /// <summary>
+        /// 返回长查询数据总数 （分页用到）
+        /// </summary>
+        int GetLineOrderCount(string strWhere);
+          /// <summary>
+        /// 返回长查询数据总数 （分页用到）
+        /// </summary>
+        int GetVisaOrderCount(string strWhere);
+          /// <summary>
+        /// 返回长查询数据总数 （分页用到）
+        /// </summary>
+        int GetCarOrderCount(string strWhere);
+        /// <summary>
+        /// 删除数据
+        /// </summary>
+        int Delete(int id);
+        /// <summary>
+        /// 增加一条数据
+        /// </summary>
+        int Add(TravelAgent.Model.Order model);
+        /// <summary>
+        /// 修改数据
+        /// </summary>
+        /// <param name="strsql"></param>
+        /// <returns></returns>
+        int Update(string strsql);
+        /// <summary>
+        /// 得到一个对象实体
+        /// </summary>
+        TravelAgent.Model.Order GetModel(int Id);
+         /// <summary>
+        /// 得到线路一个对象实体
+        /// </summary>
+        TravelAgent.Model.Order GetModel2(int Id);
+        /// <summary>
+        /// 获得前几行数据
+        /// </summary>
+        DataSet GetList0(int Top, string strWhere, string filedOrder);
+        /// <summary>
+        /// 获得线路前几行数据
+        /// </summary>
+        DataSet GetList(int Top, string strWhere, string filedOrder);
+        /// <summary>
+        /// 获得签证前几行数据
+        /// </summary>
+        DataSet GetList2(int Top, string strWhere, string filedOrder);
+        /// <summary>
+        /// 获得查询分页数据
+        /// </summary>
+        DataSet GetPageList(int pageSize, int currentPage, string strWhere, string filedOrder);
+         /// <summary>
+        /// 获得线路查询分页数据
+        /// </summary>
+        DataSet GetPageList2(int pageSize, int currentPage, string strWhere, string filedOrder);
+        /// <summary>
+        /// 获得签证查询分页数据
+        /// </summary>
+        DataSet GetPageList3(int pageSize, int currentPage, string strWhere, string filedOrder);
+        /// <summary>
+        /// 获得租车查询分页数据
+        /// </summary>
+        DataSet GetPageList4(int pageSize, int currentPage, string strWhere, string filedOrder);
+        /// <summary>
+        /// 获得线路前几行数据
+        /// </summary>
+        DataSet GetCarList(int Top, string strWhere, string filedOrder);
+         /// <summary>
+        /// 通过订单编号获得实体
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        TravelAgent.Model.Order GetModelByCode(string code);
+         /// <summary>
+        /// 通过订单编号获得实体
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+       TravelAgent.Model.Order GetModelByCode1(string code);
+    }
+}

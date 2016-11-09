@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LineCollect.aspx.cs" Inherits="TravelAgent.Web.dataDeal.LineCollect" %>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SettingProperty.aspx.cs" Inherits="TravelAgent.Web.admin.data.SettingProperty" %>

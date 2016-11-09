@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+.main{width: 1000px; height: auto; margin: auto; overflow:hidden;}
+
+.main .title{width: 1000px; height: 46px;  margin:15px auto 0; background: url(../images/help.png) no-repeat;}
+.main .title h1{float: left; height: 46px; line-height:46px; font-size:18px; font-family: "微软雅黑","宋体",Arial; color:#FAA61A; text-indent: 65px;}
+.main .title span{display: block; float: left; height: 46px; line-height: 46px; font-size: 18px; font-family: Verdana, Arial, "宋体"; color:#FBD391; padding-left: 40px;}
+
+/*边栏*/
+.sidebar{width: 262px; height: auto; float: left; overflow: hidden;}
+
+.sidebar ul{width: 260px; height: auto; border: 1px solid #E6E6E6; border-bottom: none; margin-top: 15px; overflow: hidden;}
+
+.sidebar li{width: 260px; height: 45px; line-height: 45px; font-family: "微软雅黑","宋体",Arial; font-size: 14px; border-bottom: 1px solid #E6E6E6; cursor: pointer; float: left; background-color:#FFF5DB}
+
+.sidebar li.hover{color: #FFF; background: #67C306;}
+.sidebar li.hover a{color: #FFF; background: #67C306;}
+.sidebar li em{float:left; display: inline-block; padding-left: 15px;}
+
+.sidebar li span{float: right; display: inline-block; padding-right: 20px; font-family: arial; font-size: 24px;}
+/*内容主体部分*/
+.content{width: 691px; height: auto; border: 1px solid #E6E6E6; margin-top: 15px; _display:inline; float: right; padding: 0 15px; overflow: hidden; margin-bottom:15px;}
+
+.content h3{width: 691px; height: 35px; line-height:35px; background:#FFF5DB; font-size: 14px; font-family: "微软雅黑","宋体",Arial; text-indent: 15px; color: #F60; margin-top: 15px;}
+
+.content .con{width: 691px; height: auto; padding-bottom: 15px; overflow:hidden;}
+
+.content .con em{width: 691px; height: 30px; line-height: 30px; margin-top: 15px; color: #F80; font-size: 14px; display: block;}
+
+.content .con p{width: 691px; height: auto; line-height: 23px; color: #555;  overflow:hidden;}
+
+.disno{display: none;}
+
+
+
+
+
+
+
+

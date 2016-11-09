@@ -1,0 +1,143 @@
+@charset "utf-8";
+.allbg{width:100%; height: auto; background: url(../images/bg_c2.png); overflow: hidden;}
+
+.main{width:1200px; height:auto; margin:20px auto 0; overflow:hidden;}
+/*左主体*/
+.content{width:980px; height:auto; float:left; overflow:hidden;}
+/*筛选*/
+.shai{width:980px; height:auto; overflow:hidden;}
+.shai table{background:#e5e5e5; padding:0; margin:0; border-collapse: inherit; text-align:center;}
+.shai table td{background:#fff; line-height:30px; padding:10px 0; overflow:hidden;}
+.shai table td.hed{background:#fff; text-align:left; font-family:"宋体", Arial; color: #FFAA00;}
+.shai .lt{float:left; padding-left:20px;}
+.shai .rt{float:right; padding-right:20px; color:#777;}
+.shai .rt span{font-family:Verdana, Arial, "宋体"; color:#f40;}
+.shai .lt a,.shai .lt em{padding:0 10px; color:#FFAA00;}
+.shai table td.tit {width:120px; background:#fff; color:#FFAA00;}
+.shai table td.con,.shai table td.yixuan {width:860px; height: auto; text-align: left; overflow: hidden; word-wrap: break-word;}
+.shai table td.con a{padding-left: 8px; padding-right:8px; margin-right:10px; margin-left:2px;color:#777; display: inline-block; word-wrap: break-word;border-radius: 2px;}
+.shai table td.con a:hover{color:#F60; text-decoration:none;}
+.shai table td.con a.current{background:#FFAA00; color:#F9F9F9; border-radius:2px;}
+.shai table td.yixuan{text-align:left; text-indent:10px; color:#777;}
+.shai table td.yixuan a{background: url("../images/open.gif") no-repeat right center; margin: 0 10px; padding-right: 20px; color:#777;}
+.shai table td.yixuan a:hover{background:url(../images/close.gif) no-repeat right center; color:#F00; text-decoration:none;}
+/*线路部分*/
+/*抬头*/
+.shai_tit{height:36px; background:#fff; border:1px solid #e5e5e5; margin-top:20px; overflow:hidden;}
+.shai_con{float:left; height:36px; overflow:hidden;}
+.shai_con li{height:36px; line-height:36px; padding:0 15px; float:left; overflow:hidden; border-right:1px solid #e5e5e5;}
+.shai_con li.curr{background:#FFF; color:#f60;}
+.shai_con li.curr a{color:#F60;}
+.shai_con li a{display:block; color:#555;}
+.shai_con li a:hover{color:#f60; text-decoration:none;}
+.shai_con li span{display: inline-block; vertical-align: middle; float: left;}
+.shai_con li i{display:inline-block; width:7px; height:8px; margin:15px 0 0 6px; float: left;}
+.shai_con li i.s0{background:url(../images/shaixuan_bj.gif) no-repeat -2px -1px;}
+.shai_con li.curr i.s0{background:url(../images/shaixuan_bj.gif) no-repeat -2px -20px;}
+.shai_con li i.s1{background:url(../images/shaixuan_bj.gif) no-repeat -2px -1px;}
+.shai_con li a:hover i.s1,.shai_tit li a:hover i.s0{background:url(../images/shaixuan_bj.gif) no-repeat -2px -20px;}
+.shai_con li i.s2{background:url(../images/shaixuan_bj.gif) no-repeat -2px -20px;}
+.shai_con li i.s3{background:url(../images/shaixuan_bj.gif) no-repeat -2px -38px;}
+/*价格区间*/
+.shai_jia{height:22px; line-height:22px; float:right; padding:7px 0; padding-right:20px;}
+.shai_jia .priceipt{width: 50px; height: 20px; border: 1px solid #CCC; float: left; line-height: 20px; font-size: 12px; font-family: arial; color: #333; padding-left: 5px;}
+.shai_jia i{float: left; color:#555; padding:0 5px; font-family:Verdana, Arial, "宋体"; font-size:16px;}
+.shai_jia .button{width: 42px; height: 20px; border: 1px solid #CCC; float: left; background: url(../images/queding.gif) no-repeat center; margin-left: 5px; cursor: pointer; display: block;}
+.shai_jia label{ margin-top:5px;}
+.state{}
+/*类型搜素*/
+.part{float:right; height:36px; line-height: 36px; border-left: 1px solid #D7D6D6; background: #FFF; padding: 0 10px; overflow:hidden;}
+.part input{ vertical-align:middle; margin-bottom:2px; *margin-bottom:2px;}
+.part label{ margin-left:3px; margin-right:5px;}
+/*线路开始*/
+.linebox{width: 948px; height: auto; padding: 20px 15px; margin-top: 20px; border-bottom: #c7c4c5 1px solid; border-left: #d8d5d6 1px solid; border-top: #e2e0e1 1px solid; border-right: #d8d5d6 1px solid; background: white; position: relative;  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);}
+.linebox .pre{padding: 0 20px; height: 60px; color: #FFF; font: 400 22px/60px Verdana, Arial,"宋体"; position: absolute; top: 20px; left: 15px;}
+
+.linebox .prebg1{background: #2BA165; }
+.linebox .prebg2{background: #C01815; }
+.linebox .prebg3{background: #E26900; }
+.linebox .prebg4{background: #71BA2A; }
+.linebox .prebg5{background: #13B55F; }
+.linebox .prebg6{background: #00C0C6; }
+.linebox .prebg7{background: #FE7F86; }
+.linebox .prebg8{background: #B83497; }
+.linebox .prebg9{background: #00C2C4; }
+.linebox .prebg10{background: #C01815; }
+/*left*/
+.linepic{width: 320px; height: 242px; float: left; overflow: hidden; }
+.linepic img{width: 320px; height: 242px;}
+/*right*/
+.linecon{width: 600px; height: auto; float: right; overflow: hidden;}
+
+/*右部分 线路标题*/
+.linecon .line_tit{width: 600px; height: 35px; font: 400 18px/35px "微软雅黑",Arial,"宋体"; overflow: hidden;}
+.linecon .line_tit a{color: #0055CC;}
+.linecon .line_tit a em{color: #DA0065;}
+.linecon .line_tit a:hover,.linecon .line_tit a:hover em{color: #F60;}
+
+/*标题下方 相关介绍神马的*/
+.linecon .line_txt{height: 25px; font-size: 12px; color: #4a0; line-height: 25px;}
+.linecon .line_txt span{padding-right:35px;}
+
+/*线路行程特效部分，默认4条还是3条呢，反正超过就能展开*/
+.lc-day-detail{border-top: 1px solid #E5E5E5; margin-top: 12px; overflow: hidden;}
+.doc-line-list2{float: left; overflow: hidden;}
+.doc-line-list2 dl {width: 600px; height: 16px; padding-top: 16px; display: block; line-height:16px;  overflow: hidden; zoom: 1;}
+.doc-line-list2 dt {float: left;}
+.doc-line-list2 dd {float: left; padding-left: 20px;}
+.doc-line-list2 .doc-day-num {display: inline-block; background: #f2f2f2;  height: 16px; width: 30px; text-align: center; line-height: 16px; color: #999; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}
+.doc-line-list2 .doc-mdd-list{float: left; height: 16px; font: 400 12px/16px SimSun,Arial,"宋体"; color: #777;}
+/*3个按钮*/
+/*1.行程按钮*/
+.doc-more {width:85px; height:26px; float: left; font: 400 14px/26px "微软雅黑",Arial,"宋体";  border-radius: 3px; margin: 15px 15px 0 0;  background: #EBC7AC;}
+.doc-more a {display: inline-block; width:85px; height:26px; line-height: 26px;}
+.doc-more a em{display: inline-block; height: 26px; margin: 0 10px 0 20px; color:#d93000; float:left; }
+.doc-more .icon-fode,.doc-more .icon-hide {display: inline-block;width: 12px;height: 6px; float:left; margin-top: 11px;}
+.doc-more .icon-hide{background: url(../images/zk.png) no-repeat;}
+.doc-more .icon-fode{background: url(../images/sq.png) no-repeat;}
+.doc-more a:hover{text-decoration: none;}
+
+/*2.报价按钮*/
+.doc-price{width:85px; height:26px; float: left; font: 400 14px/26px "微软雅黑",Arial,"宋体";  border-radius: 3px; margin: 15px 15px 0 0;  background: #F90; cursor: pointer;}
+.doc-price a{display: inline-block; width: 85px; height: 26px;}
+.doc-price  em{display: inline-block; height: 26px; margin: 0 10px 0 20px; color:#FFF; float:left; }
+.doc-price span{display: inline-block;width: 12px;height: 6px; float:left; margin-top: 11px;}
+.zk span{background: url(../images/zk1.png) no-repeat;}
+.sq span{background: url(../images/sq1.png) no-repeat;}
+.doc-price a:hgover{text-decoration: none;}
+
+/*3.详情按钮*/
+.doc-deital{width:85px; height:26px; float: left; font: 400 14px/26px "微软雅黑",Arial,"宋体";  border-radius: 3px; margin: 15px 15px 0 0;  background: #F60; cursor: pointer;}
+.doc-deital a{display: inline-block; width: 85px; height: 26px;}
+.doc-deital  em{display: inline-block; height: 26px; margin: 0 10px 0 25px; color:#FFF; float:left; }
+.doc-deital span{display: inline-block;width: 6px;height: 12px; float:left; margin-top: 8px; background: url(../images/xq1.png) no-repeat;}
+
+
+/*全部的报价，默认隐藏，点击展开，看不到？那就是计调懒逼货 找计调吧*/
+.case_calendar{width: 948px; height: auto; border-top: 1px solid #E5E5E5; padding-top: 15px; float: left; margin-top: 15px; display:inline; display: none; overflow: hidden;}
+.case_calendar_left{float: left; width: 471px;}
+.case_calendar_right{float: right; width: 471px;}
+
+/*分页*/
+.pages{height:40px; line-height:40px;  padding:20px 0; text-align:center; font-size:14px; font-family:Verdana, Arial, "宋体"; overflow: hidden;}
+.pages a{background:#FFF; color: #777; margin: 0 5px; padding: 8px 15px; border:1px solid #CCC;}
+.pages a:hover{background:#2BA165; border:1px solid #2BA165; color: #fff; text-decoration: none;}
+.pages .current{background:#2BA165; color: #fff;}
+.pages span{background:#F9A01F; border:1px solid #2BA165; color: #fff; margin: 0 5px; padding: 8px 15px;}
+
+
+/*右边栏*/
+.sidebar{width:198px; height:auto; border:1px solid #E5E5E5; background: #FFF; float:right; overflow:hidden;}
+.sidebar h3{padding:4px 15px; height:30px; font:700 16px/30px "微软雅黑", Arial, "宋体"; background:#FFF; border-bottom:1px solid #DDD;}
+.th_line{width:178px; height:auto; padding:0 10px; overflow:hidden;}
+.th_line li{width:178px; padding:15px 0; line-height:22px; border-bottom:1px solid #E5E5E5; overflow:hidden;}
+.th_line li img{display:block; width:178px; height:135px; margin-bottom:8px;}
+.th_line li a{color:#0063DC;}
+.th_line li p{ height:30px; line-height:30px;}
+.th_line li p span{color:#FF2900; font:400 14px/30px Verdana, Arial, "宋体";  vertical-align:middle;}
+.th_line li p s{color:#999; font-family:Verdana, Arial, "宋体"; margin-left:10px;}
+/*搜索无信息*/
+.noContent{margin-top:20px;background:#fff5df;padding:30px 60px; height:60px;}
+.noContent .content{background:url(../images/icon.png) no-repeat 0 -135px; height:50px;padding-left:60px;font-size:18px;color:#000;}
+.noContent .content p{font-size:14px;color:#666;}
+.noContent .content p a{color:#2e7dcd;}

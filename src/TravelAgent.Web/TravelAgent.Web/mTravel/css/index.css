@@ -1,0 +1,1114 @@
+#page_scheduling{
+	display:none;
+}
+#page_2{
+	display:none;
+	padding-bottom:60px;
+}
+#page_2 header,#page_1 header{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+}
+#page_2 header:after,#page_1 header:after{ content:"\20"; display:block; clear:both; height:0}
+#page_1{
+	padding-bottom:60px;
+}
+.see-more{
+	padding-top:5px;
+}
+.see-more p{
+	color:#bdbdbd;
+	height:25px;
+	line-height:25px;
+	border-top:1px solid #dfdfdf;
+	text-align:center;
+}
+
+.main-line{-webkit-box-flex:1}
+.line-w{padding:16px 16px}
+.line-tit{
+	font-size:16px;
+	font-weight:bold;
+	color:#333;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #CCCCCC;
+	margin-left:5px;
+	margin-right:5px;
+}
+.line-tit em{
+	color:#fff;
+	padding:0 5px;
+	font-weight:normal;
+    font-size:14px;
+    display:inline-block;
+    height:14px;
+    line-height:14px;
+    margin-right:5px;
+}
+.line-tit a
+{
+    float:right;
+    color:#008857;
+    font-size:14px;
+	}
+.line-tit em.c-0{
+	background-color:#008857;
+}
+.line-tit em.c-3{
+	background-color:#66ccff;
+}
+.line-tit em.c-6{
+	background-color:#fcb34c;
+}
+.line-tit em.c-1{
+	background-color:#56d8c4;
+}
+.line-tit em.c-4{
+	background-color:#56d8c4;
+}
+#price-line{
+	position:fixed;
+	bottom:0;
+	display:block;
+	width:100%;
+	height:40px;
+	background:#ff9e2b;
+	padding:10px 0 1px;
+	z-index:1;
+}
+#price-line p strong{
+	color:#fff;
+}
+#price-line p del{
+	color:#fff;
+}
+#price-line p .btn{
+	position:absolute;
+	height:51px;
+	top:0;
+	right:0;
+	background:#ff8400;
+	line-height:51px;
+	font-size:18px;
+	font-weight:bold;
+}
+/*
+.price-line p{
+	vertical-align:top;
+}
+*/
+.price-line p a{
+	vertical-align:bottom;
+}
+.price-line p strong {
+	font-size: 26px;
+	color: #ff7661;
+	padding-left:10px;
+	position:relative;
+	top:-3px;
+}
+.price-line p strong i {
+	font-size:12px;
+	font-weight:normal;
+
+}
+.price-line p del {
+	color:#777;
+	position:relative;
+	top:-3px;
+	left:5px;
+}
+.price-line .btn-inline {
+	padding: 1px 23px;
+	float: right;
+	display: inline;
+	vertical-align:bottom;
+	min-width: 0;
+	font-weight:normal;
+	font-size:14px;
+}
+
+
+.line-basic-info{
+	-webkit-box-shadow:0px 1px 10px 0px #D1D1D1;
+	background:#fff;
+}
+.line-basic-info .bi_1{
+	display:-webkit-box;
+}
+.line-basic-info .bis{
+	-webkit-box-flex:1;
+	border-right:1px solid #d7d7d7;
+	border-bottom:1px solid #d7d7d7;
+	text-align:center;
+	padding:10px 20px;
+    width:33.33%;
+}
+.line-basic-info .bis:last-child{
+	border-right:none;
+}
+
+.line-basic-info .bis p:first-child{
+	color:#777;
+}
+.line-basic-info .bi_2{
+	padding:10px 20px;
+}
+.line-basic-info .bi_2 span{
+	color:#777;
+}
+.line-basic-info .bi_2 em{
+	color:#ff9c00;
+}
+
+
+
+
+
+.line-cont{display:-webkit-box}
+
+
+
+.line-block{
+	margin:10px 0;
+	-webkit-box-shadow:0px 1px 10px 0px #D1D1D1;
+}
+.line-info{width:100%;border-top:1px solid #fff}
+/*
+.line-block .line-info:last-child .line-i-w{
+	border-bottom:none;
+}
+.line-block .line-info:first-child .line-i-w{
+	border-bottom:1px solid #e3e3e3;
+}
+.line-i-w{background-color:#fff;padding:10px 20px;display:-webkit-box;border-bottom:1px solid #e3e3e3}
+.line-i-w span{-webkit-box-flex:1;color:#333;font-size:16px;display:block;font-weight:bold}
+*/
+
+.line-i-c-h{padding:10px 0px;font-size:14px;}
+
+.line-i-c{background-color:#fff;padding:0px 16px;color:#333;font-size:12px;overflow:hidden;height:auto;-webkit-transition:height 1000ms ease}
+.line-i-c .tp{
+	margin-top:10px;
+}
+.line-i-c h3{border-bottom:1px solid #00AC2F;color:#333;font-size:14px;padding:0; }
+
+
+
+
+
+.line-img div.line-s-m{
+	display:block;
+	width:300px;
+	height:200px;
+	margin:0 auto;
+	position:relative;
+}
+.line-img div.line-s-m img{
+	display:block;
+	width:300px;
+	height:200px;
+	background:url(/static/img/img_load.png) no-repeat center center #eee
+}
+.line-img div.line-s-m .img-bg{
+	width:100%;
+	height:25px;
+	background:#000;
+	opacity:0.7;
+	position:absolute;
+	bottom:0;
+}
+.line-img div.line-s-m .img-t{
+	width:100%;
+	position:absolute;
+	bottom:0;
+	color:#fff;
+}
+.line-img div.line-s-m span.fl{
+	line-height:25px;
+	padding-left:10px;
+}
+.line-img div.line-s-m .img-t a{
+	color:#fff;
+	line-height:25px;
+	padding-right:10px;
+}
+.line-img div.line-s-m .img-t a.faved{
+	color:#ff9c00
+}
+.line-img div.line-s-m .img-t em{
+	color:#ff9c00;
+}
+
+i.img-tag{
+	display: inline-block;
+	height: 17px;
+	position: static;
+	width: auto;
+	top: 4px;
+	color: #fff;
+	background: #ffaf44;
+	padding: 0 4px;
+	margin-right:5px;
+}
+i.img-tag:last-child{
+	margin-right:0;
+}
+i.img-tag.xiuxiandujia {
+	background:#ffaf44;
+}
+i.img-tag.taqing {
+	background:#56d8c4;
+}
+i.img-tag.shanghua {
+	background:#ff7661;
+}
+i.img-tag.xiangcun {
+	background:#7fc8ee;
+}
+i.img-tag.huwai {
+	background:#90cc00;
+}
+i.img-tag.haidao {
+	background:#60e3ff;
+}
+i.img-tag.wenquan {
+	background:#ff8d45;
+}
+i.img-tag.guzhen {
+	background:#0c9e99;
+}
+i.img-tag.sheying {
+	background:#61757d;
+}
+i.img-tag.zijiayou {
+	background:#7fc8ee;
+}
+i.img-tag.caizhai {
+	background:#6ecf81;
+}
+i.img-tag.xiaozhoumo {
+	background:#ffb045;
+}
+i.img-tag.youlun {
+	background:#7fc8ee;
+}
+i.img-tag.tezhonglvyou {
+	background:#57d8c4;
+}
+i.img-tag.yangsheng {
+	background:#91cd03;
+}
+
+
+
+
+/*
+行程安排
+*/
+.str{
+	color:#65c201
+}
+#schedul *{
+	font-size:14px;
+}
+.sch_img img{
+	max-width:280px;
+}
+
+/*
+预订指南
+*/
+
+#remark{
+	padding-top:20px;
+}
+/*
+线路咨询
+*/
+#zixun div.f{
+	background:#fff;
+	padding:10px;
+}
+#zixun div:first-child textarea,#zixun div:first-child input{
+	line-height:2;
+	color:#b8b8b8;
+	font-size:14px;
+	background:#f4f4f4;
+	width:96%;
+}
+textarea {
+	padding:1% 2%;
+	margin-bottom:2%;
+	height:130px;
+}
+input {
+	padding:0 2%;
+	height:40px;
+}
+
+
+/*
+
+*/
+.select_2 {
+	background-color:#FFFFFF;
+	-webkit-box-shadow:0px 1px 10px 0px #D1D1D1;
+}
+.select_2 ul li{
+	position:relative;
+    background-color:#fff;
+    padding:0 0 0 15px;
+    border-bottom:0;
+    display:block;
+}
+.select_2 ul li > a {
+	display: block;
+	position: relative;
+	padding: 10px 38px 10px 0px;
+	border-bottom:1px solid #dfdfdf;
+}
+.select_2 ul li:last-child a{
+	border-bottom:none;
+}
+.select_2 ul li > a:after{ content:"\20"; display:block; clear:both; height:0}
+.select_2 ul li a span:nth-child(2) {
+	float:left;
+	margin-left: 37px;
+}
+.select_2 ul li a span:nth-child(3) {
+	float:right;
+	color:#65c201;
+	font-size:14px;
+}
+.select_2 ul li a .link-img {
+	display: inline-block;
+	position: absolute;
+	left:0px;
+	top:-4px;
+	width: 28px;
+	height: 29px;
+	margin: 8px 0 8px 0px;
+	background: url(/static/images/m/m_icon.png) no-repeat;
+	background-size: 800px 300px;
+}
+
+.select_2 ul li a .link-img.tel {
+	background-position:-483px -103px
+}
+.select_2 ul li a .link-img.c1 {
+	background-position:-9px -161px
+}
+.select_2 ul li a .link-img.c2 {
+	background-position:-66px -161px
+}
+.select_2 ul li a .link-img.c3 {
+	background-position:-127px -161px
+}
+.select_2 ul li a .link-img.c4 {
+	background-position:-186px -161px
+}
+.select_2 ul li a .link-img.c5 {
+	background-position:-238px -161px
+}
+.select_2 ul li a .link-img.c6 {
+	background-position:-288px -161px
+}
+.select_2 ul li a .link-img.c7 {
+	background-position:-744px -158px
+}
+.select_2 ul li a .link-img.d1 {
+	background-position:-353px -161px
+}
+.select_2 ul li a .link-img.d2 {
+	background-position:-411px -161px
+}
+.select_2 ul li a .link-img.d3 {
+	background-position:-467px -161px
+}
+.select_2 ul li a .link-img.d4 {
+	background-position:-532px -159px
+}
+.select_2 ul li a .link-img.d5 {
+	background-position:-590px -159px
+}
+.link-block a .link-img.e1{
+	background-position:-650px -147px
+}
+.select_2 ul li a .link-img.f1 {
+	background-position:-7px -210px
+}
+.select_2 ul li a .link-img.f2 {
+	background-position:-50px -210px
+}
+.select_2 ul li a .link-img.f3 {
+	background-position:-102px -210px
+}
+.select_2 ul li a .link-img.f4 {
+	background-position:-151px -210px
+}
+.select_2 ul li a .link-img.f5 {
+	background-position:-206px -210px
+}
+.select_2 ul li a .link-img.f6 {
+	background-position:-263px -210px
+}
+.select_2 ul li a .link-icon {
+	position:absolute;
+	right: 20px;
+	top: 14px;
+}
+
+
+.select_2 .line-i-w a .link-img {
+	left:0;
+	top:1px;
+}
+.select_2 .line-i-w a span:nth-child(2) {
+	float:left;
+	margin-left: 30px;
+	font-size:14px;
+	font-weight:bold;
+}
+/*
+线路报价
+*/
+.select_2.price ul li a span{
+	font-size:16px;
+	font-weight:bold;
+	color:#65c201;
+}
+.select_2.price ul li.price-line p{
+	border-top:1px solid #dfdfdf;
+	padding:10px 0 10px 0
+}
+.select_2.price ul li.price-line p strong{
+	padding-left:0;
+}
+.select_2.price ul li.price-line p a{
+	margin-right:10px;
+}
+
+
+/*
+
+*/
+#feature{
+	background:#fff;
+	padding:6px 0;
+}
+#feature p{
+	display: block;
+	position: relative;
+	padding: 4px 10px 4px 0px;
+}
+#feature p span{
+	margin-left:40px;
+	margin-right:10px;
+	font-weight:bold;
+	font-size:14px;
+}
+#feature p em{
+	color:#777;
+}
+#feature p i{
+	display: inline-block;
+	position: absolute;
+	left: 15px;
+	top: 4px;
+	width: 28px;
+	height: 29px;
+	background: url(/static/img/v2.0/m_icon.png?20140414) no-repeat;
+	background-size: 800px 300px;
+}
+#feature p i.i1{
+	background-position: -353px -161px;
+}
+#feature p i.i2{
+	background-position: -411px -161px;
+}
+#feature p i.i3{
+	background-position: -467px -161px;
+}
+
+/*
+
+*/
+.line-block .c{
+	background:#fff;
+	padding:6px 15px;
+}
+.line-block .c p{
+	padding:1px 0;
+}
+.line-block .c p em{
+	color:#777;
+}
+em,i{ font-style:normal;}
+
+
+/*
+
+*/
+.m-list{
+	display:-webkit-box;
+	margin-bottom:10px;
+	position:relative;
+	margin-top:20px;
+}
+.m-list ul
+{
+	 width:100%;
+	}
+.m-list:last-child{
+	margin-bottom:0;
+}
+.m-list a{
+	display:-webkit-box;
+	width:100%;
+	background:#fff;
+}
+.m-list a:active{
+	background:#fffdeb;
+}
+.m-list .m-img{
+	display:block;
+	width:90px;
+	height:60px;
+	margin:10px 0 10px 10px;
+	position:relative;
+}
+i.tag_icon{
+	display:inline-block;
+	width:42px;
+	height:17px;
+	background:url(/static/images/m/m_icon.png) no-repeat;
+	background-size:800px 300px;
+	position:absolute;
+	top:4px;
+}
+i.gn{
+	background-position:-218px -109px;
+}
+i.gw{
+	background-position:-302px -109px;
+}
+i.zb{
+	background-position:-401px -109px;
+}
+.m-list .m-img img{
+	display:block;
+	width:90px;
+	height:60px
+}
+.m-list .m-c{
+	-webkit-box-flex:1;
+	padding:0px 10px 0px 10px;
+	margin:10px 0px
+}
+.m-list .m-c-bg{
+	-webkit-box-flex:1
+}
+.m-list .m-c-bg:after{
+	content:"\20"; display:block; clear:both; height:0
+}
+.m-list .m-c p{
+	color:#555;
+	font-size:14px;
+	display:-webkit-box;
+	line-height:18px;
+	margin-top:1px;
+}
+.m-list .m-c-bg code{
+	overflow:hidden;
+	display:inline-block;
+	-webkit-line-clamp: 2;
+}
+.m-list .m-c p a{
+	color:#555
+}
+.m-list .m-c p span{
+	color:#777;
+	-webkit-box-flex:1;
+	display:block
+}
+.m-list .m-c p em{
+	font-size:14px
+}
+.m-list .m-c p em.co-1{
+	color:#ff7661;
+	font-size:12px;
+}
+.m-list .m-c p span em{
+	color:#fff;
+	padding:0 5px;
+	font-size:12px;
+    margin-right:5px;
+}
+.m-list .m-c p span i{
+	font-size:12px;
+	color:#777;
+}
+.m-list .m-c p span em.c-0{
+	background-color:#66ccff;
+}
+
+.m-list .m-c p span em.c-3{
+	background-color:#66ccff;
+}
+.m-list .m-c p span em.c-6{
+	background-color:#fcb34c;
+}
+.m-list .m-c p span em.c-1{
+	background-color:#56d8c4;
+}
+.m-list .m-c p span em.c-4{
+	background-color:#56d8c4;
+}
+.m-list .m-c p strong{
+	-webkit-box-flex:1;
+	display:block;
+	text-align:right;
+	font-size:20px;
+	color:#ff7661;
+}
+.m-list .m-c p strong i{
+	font-size:12px;
+	font-weight:normal;
+}
+
+/*
+tab dropdown
+*/
+.posfex .icon_arrow_down{
+	position:absolute;
+	right:5px;
+	top:18px;
+}
+.icon_arrow_down{
+	background:url(/static/images/m/m_icon.png) no-repeat -451px -73px;
+	display:inline-block;
+	width:13px;
+	height:11px;
+	background-size:800px 300px
+}
+/*site_map*/
+.site_map{
+    margin:10px 20px 5px;
+    color:#aaa;
+}
+.site_map a{
+    color:#aaa;
+}
+.site_map a.cur{
+    cursor:default;
+}
+
+.swiper-container { height: 58px;}
+
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ *
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+
+/* ===============================================================
+Basic Swiper Styles
+================================================================*/
+.swiper-container {
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	/* Fix of Webkit flickering */
+	z-index:1;
+}
+.swiper-wrapper {
+	position:relative;
+	width:100%;
+	-webkit-transition-property:-webkit-transform, left, top;
+	-webkit-transition-duration:0s;
+	-webkit-transform:translate3d(0px,0,0);
+	-webkit-transition-timing-function:ease;
+
+	-moz-transition-property:-moz-transform, left, top;
+	-moz-transition-duration:0s;
+	-moz-transform:translate3d(0px,0,0);
+	-moz-transition-timing-function:ease;
+
+	-o-transition-property:-o-transform, left, top;
+	-o-transition-duration:0s;
+	-o-transform:translate3d(0px,0,0);
+	-o-transition-timing-function:ease;
+	-o-transform:translate(0px,0px);
+
+	-ms-transition-property:-ms-transform, left, top;
+	-ms-transition-duration:0s;
+	-ms-transform:translate3d(0px,0,0);
+	-ms-transition-timing-function:ease;
+
+	transition-property:transform, left, top;
+	transition-duration:0s;
+	transform:translate3d(0px,0,0);
+	transition-timing-function:ease;
+}
+.swiper-free-mode > .swiper-wrapper {
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	margin: 0 auto;
+}
+.swiper-slide {
+	float: left;
+}
+
+.swiper-slide img{
+    width: 360px;
+    height: 58.461538461538px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+	-ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+	-ms-touch-action: pan-x;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+	/* Specify Swiper's Size: */
+    margin-bottom:15px;
+}
+.swiper-slide {
+	/* Specify Slides's Size: */
+}
+.swiper-slide-active {
+	/* Specific active slide styling: */
+
+}
+.swiper-slide-visible {
+	/* Specific visible slide styling: */
+
+}
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 45%;
+  bottom: 10px;
+}
+.swiper-pagination-switch {
+	/* Stylize pagination button: */
+     display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 8px;
+      background:rgba(255,255,255,0.5);
+      margin-right: 5px;
+      cursor: pointer;
+
+}
+.swiper-active-switch {
+	/* Specific active button style: */
+	background:rgba(255,255,255,1);
+}
+.swiper-visible-switch {
+	/* Specific visible button style: */
+	background:rgba(255,255,255,1);
+}
+
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ *
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+
+/* ===============================================================
+Basic Swiper Styles
+================================================================*/
+.swiper-container {
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	/* Fix of Webkit flickering */
+	z-index:1;
+}
+.swiper-wrapper {
+	position:relative;
+	width:100%;
+	-webkit-transition-property:-webkit-transform, left, top;
+	-webkit-transition-duration:0s;
+	-webkit-transform:translate3d(0px,0,0);
+	-webkit-transition-timing-function:ease;
+
+	-moz-transition-property:-moz-transform, left, top;
+	-moz-transition-duration:0s;
+	-moz-transform:translate3d(0px,0,0);
+	-moz-transition-timing-function:ease;
+
+	-o-transition-property:-o-transform, left, top;
+	-o-transition-duration:0s;
+	-o-transform:translate3d(0px,0,0);
+	-o-transition-timing-function:ease;
+	-o-transform:translate(0px,0px);
+
+	-ms-transition-property:-ms-transform, left, top;
+	-ms-transition-duration:0s;
+	-ms-transform:translate3d(0px,0,0);
+	-ms-transition-timing-function:ease;
+
+	transition-property:transform, left, top;
+	transition-duration:0s;
+	transform:translate3d(0px,0,0);
+	transition-timing-function:ease;
+}
+.swiper-free-mode > .swiper-wrapper {
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	margin: 0 auto;
+}
+.swiper-slide {
+	float: left;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+	-ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+	-ms-touch-action: pan-x;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+	/* Specify Swiper's Size: */
+    margin-bottom:15px;
+}
+.swiper-slide {
+	/* Specify Slides's Size: */
+}
+.swiper-slide-active {
+	/* Specific active slide styling: */
+
+}
+.swiper-slide-visible {
+	/* Specific visible slide styling: */
+
+}
+
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 45%;
+  bottom: 10px;
+}
+.swiper-pagination-switch {
+	/* Stylize pagination button: */
+     display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 8px;
+      background:rgba(255,255,255,0.5);
+      margin-right: 5px;
+      cursor: pointer;
+
+}
+.swiper-active-switch {
+	/* Specific active button style: */
+	background:rgba(255,255,255,1);
+}
+.swiper-visible-switch {
+	/* Specific visible button style: */
+	background:rgba(255,255,255,1);
+}
+
+/*line-scelist*/
+.list_tit{position: relative; border-top: 1px solid #e3e3e3;margin: 10px 0;height: 13px;}
+.list_tit span{position: relative;top: -15px;left: 50%;margin-left: -60px;font-size: 14px;background: #f4f4f4;display: inline-block;height: 30px;line-height: 30px;color: #777;text-align: center;}
+
+/*visa-index*/
+.visa_tit{position: relative; border-top: 1px solid #e3e3e3;margin: 15px 0 10px 0;height: 13px;}
+.visa_tit span{position: relative;top: -10px;left: 50%;margin-left: -60px;font-size: 14px;background: #f4f4f4;display: inline-block;width: 120px;height: 20px;line-height: 20px;color: #777;text-align: center;}
+
+/*翻页*/
+.fanye {display: -webkit-box;margin: 10px 0;position: relative;}
+.fanye .first{ display: none; }
+.fanye .last{ display: none; }
+.fanye .page{ display: none; }
+.fanye .selected{ display: block; width: 80px; height: 30px; line-height: 30px; text-align: center;background: #fff; margin: 0 10px; font-size: 18px; font-weight: bold; }
+.fanye .selected a{ color: #66ccff; }
+.fanye .previous{ display: block; width: 80px; height: 30px; line-height: 30px; text-align: center;background: #fff; font-size: 18px; font-weight: bold; }
+.fanye .previous a{ color: #66ccff; }
+.fanye .next{ display: block; width: 80px; height: 30px; line-height: 30px; text-align: center;background: #fff; font-size: 18px; font-weight: bold; }
+.fanye .next a{ color: #66ccff; }
+.fanye ul{ margin: 0 auto; }
+.fanye ul li{ float: left; }
+
+/********************************页头*******************************************/
+.header {width: 100%; height: 50px; background: #FFAA11; position: relative; z-index: 100;}
+/*首页*/
+.header h1 { height: 40px; padding: 5px 0; background: url(../images/logo.png) no-repeat 10px center; background-size: 35px 35px;}
+.header h1 em{margin-left: 50px; height: 40px; font: 700 20px/40px "microsoft yahei","SimHei",Arial,sans-serif; color: #FFF;}
+/*返回上一页*/
+.ic_back {width: 50px; height: 44px; position: absolute; top: 0; left: 5px; display: block;}
+.ic_back:before {content: ''; width: 14px;  height: 14px; border-top: 2px solid #fff; border-left: 2px solid #fff; border-bottom: transparent; border-right: transparent; top: 50%; margin: -6px 0 0 -7px; left: 50%;  position: absolute;  -webkit-transform: rotate(-45deg); -o-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);}
+/*内页大标题*/
+.header h2 {margin: 0 auto; height: 50px; font: 700 1.2rem/50px "microsoft yahei","SimHei",Arial,sans-serif; color: #fff; text-align: center;}
+
+/*分类导航*/
+.navbtn{width: 22px; height: 22px; padding: 14px 20px; position: absolute; top: 0; right: 0; cursor: pointer; color: #fff; text-decoration: none; font-size: 16px; text-indent: -9999em; line-height: 22px; font-size: 1px; display: block; font-family: Arial,Helvetica,sans-serif; font-weight: 700;}
+.navbtn span {display: block; background: #fff; height: 3px; margin-top: 3px;}
+
+.line-img {
+	position: relative
+}
+.line-img span.line-s-m {
+	display: block;
+	width: 300px;
+	height: 200px;
+	background-color: #fff;
+	padding: 5px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 1px 10px 0px #D1D1D1
+}
+
+.line-img span img {
+	display: block;
+	width: 300px;
+	height: 200px;
+	background: url(../imgs/img_load.png) no-repeat center center #eee
+}
+
+/*页脚*/
+.copyright {margin: 10px 10px 0; padding: 10px 0; background: #FFF; overflow: hidden;}
+.copyright p{text-align: center; font: 100 14px/25px "microsoft yahei","SimHei",Arial,sans-serif; color: #333;}
+.copyright p a{margin: 0 10px; font-size: 14px; color:#333;}
+
+/*预订按钮*/
+.yuding_btn {
+        display: -webkit-box;
+        display: -o-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: box;
+        box-orient: horizontal;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        background: #FF9E2B;
+}
+.yuding_btn a{
+        display: block;
+        width: 50%;
+        height: 50px;
+        font: 700 1.2rem/50px "Microsoft YaHei","微软雅黑",Arial,"宋体";
+        text-align: center; 
+        color: #FFF;
+}
+.yuding_btn a.yuding_tel{
+        background: #FF9E2B;
+}
+.yuding_btn a.yuding_onclik{
+        background: #FF6600;
+}
+
+/*弹窗*/
+/*遮挡层*/
+.zhedang{z-index: 9998; position:fixed; bottom:0px; left:0; width:100%; height:100%; background:#000; opacity:0.6; filter:alpha(opacity=60); display:none}
+
+/*导航窗口*/
+.navbox{z-index:9999;  position:fixed;  top: 50px; margin: 0 auto; background-color:#fff; width: 100%; min-width: 320px; display: none;}
+.navbox_on{display: -webkit-box; display: -o-box; display: -moz-box; display: -ms-flexbox; display: box; box-orient: horizontal; width: 100%; padding: 10px 0 8px;}
+.navbox_on a{display: block; -webkit-box-flex: 1; -moz-box-flex: 1; -o-box-flex: 1; -ms-flex: 1; box-flex: 1; text-align: center; line-height: 20px;}
+.navbox_on a span{display: block; width: 30px; height: 35px; margin: 0 auto; background:url(../images/nav_logo.png) no-repeat; background-size: 250px 250px;}
+.navbox_on .ic_1{background-position: 0 0px;}
+.navbox_on .ic_2{background-position: -34px 0px;}
+.navbox_on .ic_3{background-position:-65px 0px;}
+.navbox_on .ic_4{background-position:-90px 0px;}
+.navbox_on em{font-size: .8rem; }
+
+/*搜索窗口*/
+.nav_search{z-index:9999; position:fixed; top: 50px; margin: 0 auto; background-color:#fff; width: 100%; max-width: 640px; min-width: 320px; display:none;}
+/*抬头*/
+.nav_search_tit {border-bottom:1px solid #ddd; background: #F5F7FA; height: 24px; padding:15px; position: relative;}
+.nav_search_tit h3{float: left; text-align: left; font-size: 18px; line-height: 24px; color: #008857; font-weight: 700;}
+.nav_search_tit .closebtn {float: right; color:#777; text-align: right; font:bold 1.6rem/24px simsun; text-shadow:0 1px 0 #ddd;}
+/*搜索部分*/
+.nav_search_on{width: 100%; color: #333; background: #FFF;}
+.searchbox{padding: 25px 15px;  border-bottom: 1px solid #E2E2E2;}
+.searchbox_top{width: 100%; height: 40px; position: relative; overflow: hidden;}
+.searchbox_top .s_ipt{display: block; width: 100%;  text-indent: 35px; height: 38px; border: 1px solid #DDD; font-size: 14px; line-height: 32px; color: #777;}
+.searchbox_top .x_ico{width: 22px; height: 22px; background: url(../images/nav_logo.png) no-repeat -53px -3px; background-size: 200px 200px;  position: absolute; left: 6px; top: 10px;}
+.searchbox_top .d_ico{ display: block; width: 60px; height: 40px; font: 700 16px/38px tahoma, Arial,"宋体"; text-align: center; color:#FFF; position: absolute; right: 0; top: 0; background-color: #008454;}
+
+/*产品分类*/
+.roboxs{z-index:9999; position:absolute; top: 0; margin: 0 auto; background-color:#fff; width: 100%; max-width: 640px; min-width: 320px; display:none;}
+.roboxs_tit{border-bottom:1px solid #ddd; background: #F5F7FA; height: 24px; padding:15px; position: relative;}
+.roboxs_tit h3{float: left; text-align: left; font-size: 18px; line-height: 24px; color: #008857; font-weight: 700;}
+.roboxs_tit .closebtn2 {float: right; color:#777; text-align: right; font:bold 1.6rem/24px simsun; text-shadow:0 1px 0 #ddd;}
+
+.rolinList{width: 100%; overflow:hidden;}
+.rolinList li{width: 100%; border-bottom:1px solid #E6E6E6; border-top:1px solid #FFF;}
+.rolinList li em{display:block; width: 100%; height:36px; background: #F5F7FA; font: 100 1rem/36px "microsoft yahei","SimHei",Arial,sans-serif; font-size:14px; text-indent:15px; position: relative;}
+.rolinList li em a{font: 700 1rem/36px "microsoft yahei","SimHei",Arial,sans-serif; display: inline; float: left;}
+.rolinList li em span{display: block; width: 16px; height: 16px; background: url(../images/jia.gif) no-repeat; position: absolute; right: 15px; top: 10px;}
+.rolinList li em.open span{background: url(../images/jian.gif) no-repeat;}
+.rocon{height:auto; padding:10px; background:#fff; font-size:.8rem; line-height:25px; overflow:hidden; display: none;}
+.rocon a{font:100 .8rem/25px "microsoft yahei","SimHei",Arial,sans-serif; margin:0 5px; display: inline-block; float: left;}
+
+.theme-popbod-one{width: 100%; color: #333; background: #FFF;}
+.theme-popbod-one .m_more_des {background: #fff; display: -webkit-box; border-bottom: 1px solid #ececec; width: 100%;}
+.theme-popbod-one .m_more_des span {-webkit-box-flex: 4; display: block; width: 25%;}
+.theme-popbod-one .m_more_des span a { display: block; border-bottom: 0px; font-size: 14px; color: #333; line-height: 20px; text-align: center; border-right: 1px solid #E2E2E2; padding: 15px 10px;}

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F4B9051-EADE-4180-84BE-ECCD98091444}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TravelAgent.Model</RootNamespace>
+    <AssemblyName>TravelAgent.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adbanner.cs" />
+    <Compile Include="AdminList.cs" />
+    <Compile Include="AdminRole.cs" />
+    <Compile Include="Advertising.cs" />
+    <Compile Include="Area.cs" />
+    <Compile Include="Article.cs" />
+    <Compile Include="CarBrand.cs" />
+    <Compile Include="CarCity.cs" />
+    <Compile Include="CarClass.cs" />
+    <Compile Include="CarList.cs" />
+    <Compile Include="CarNumber.cs" />
+    <Compile Include="CarPrice.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Club.cs" />
+    <Compile Include="ClubLineCollect.cs" />
+    <Compile Include="ClubPoints.cs" />
+    <Compile Include="CustomOrder.cs" />
+    <Compile Include="InfoSetting.cs" />
+    <Compile Include="DepartureCity.cs" />
+    <Compile Include="Destination.cs" />
+    <Compile Include="EmailRecord.cs" />
+    <Compile Include="EmailServer.cs" />
+    <Compile Include="Insure.cs" />
+    <Compile Include="JoinProperty.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="LineConsult.cs" />
+    <Compile Include="LineContent.cs" />
+    <Compile Include="LineHoliday.cs" />
+    <Compile Include="LineJourney.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="LineOrderTourist.cs" />
+    <Compile Include="LineSpePrice.cs" />
+    <Compile Include="LineTheme.cs" />
+    <Compile Include="Links.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="References.cs" />
+    <Compile Include="ReferencesSchool.cs" />
+    <Compile Include="School.cs" />
+    <Compile Include="SMSRecord.cs" />
+    <Compile Include="SMSServer.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="SysInfo.cs" />
+    <Compile Include="TourComment.cs" />
+    <Compile Include="TourGuide.cs" />
+    <Compile Include="TourGuideConf.cs" />
+    <Compile Include="TourGuideGallery.cs" />
+    <Compile Include="TourGuideRoute.cs" />
+    <Compile Include="TourGuideSpot.cs" />
+    <Compile Include="TourGuideTemp.cs" />
+    <Compile Include="VisaBrand.cs" />
+    <Compile Include="VisaCountry.cs" />
+    <Compile Include="VisaList.cs" />
+    <Compile Include="VisaCity.cs" />
+    <Compile Include="VisaType.cs" />
+    <Compile Include="WebNav.cs" />
+    <Compile Include="WebInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

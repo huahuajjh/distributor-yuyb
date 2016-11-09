@@ -1,0 +1,126 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title></title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/jquery.address.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../../js/url.js"></script>
+    <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/js/validate.js"></script>
+    <script type="text/javascript" src="/js/jquery.form.js"></script>
+    <script type="text/javascript" src="../js/select-ui.min.js"></script>
+    <script type="text/javascript" src="/js/calendar.js"></script>
+    <script type="text/javascript" src="../js/address.js"></script>
+    <script type="text/javascript" src="../../js/jquery.json.js"></script>
+    <script type="text/javascript">
+        function getQueryString(name) {
+            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return unescape(r[2]);
+            }
+            return null;
+        }
+        var sendData = {
+            Id: 0,
+            Name: "",
+            ShortName: "",
+            AreaId: 0
+        };
+        //保存目的地
+        var EditClub = function () {
+            $.ajax({
+                dataType: "jsonp",//数据类型为jsonp  
+                jsonp: "callback",//服务端用于接收callback调用的function名的参数
+                type: "get",
+                url: apiURL.SchoolUpdate,
+                async: false,
+                data: {
+                    school: $.toJSON(sendData)
+                },
+                success: function (responseText, statusText) {
+                    // 如果父页面重载或者关闭其子对话框全部会关闭
+                    parent.location.reload();
+                    return false;
+                }
+            })
+        }
+        $(function () {
+            $.ajax({
+                dataType: "jsonp",//数据类型为jsonp  
+                jsonp: "callback",//服务端用于接收callback调用的function名的参数
+                type: "get",
+                url: apiURL.SchoolGetById,
+                async: false,
+                data: {
+                    id: getQueryString("id")
+                },
+                success: function (data) {
+                    var d = data.Data;
+                    if (!d) return;
+                    $("#txtClubName").val(d.Name);
+                    $("#txtAbbreviation").val(d.ShortName);
+                    $("#txtAddress").val(d.AreaName);
+                    sendData.Name = d.Name;
+                    sendData.ShortName = d.ShortName;
+                    sendData.AreaId = d.AreaId;
+                    sendData.Id = d.Id;
+                    $("body").css("display", "block");
+                }
+            })
+
+            //表单验证JS
+            $("#form1").validate({
+                //出错时添加的标签
+                errorElement: "span",
+                submitHandler: function () {
+                    sendData.Name = $("#txtClubName").val();
+                    sendData.ShortName = $("#txtAbbreviation").val();
+                    EditClub();
+                    return false;
+                },
+                success: function (label) {
+                    //正确时的样式
+                    label.text(" ").addClass("success");
+                }
+            });
+            $("#txtAddress").bindAddress({
+                url: apiURL.AreaGet,
+                changeFn: function (address) {
+                    sendData.AreaId = address.Id;
+                }
+            });
+        });
+    </script>
+</head>
+<body style="display:none;">
+    <form id="form1">
+        <div>
+            <table border="0" cellpadding="0" cellspacing="0" style="width:100%;" class="formtable">
+                <tr>
+                    <td style="text-align:right; color:#056dae;background: #F5F5F5; width:80px;">学校名称<span class="red">*</span>：</td>
+                    <td style=" padding-top:10px;">
+                        <input type="text" value="" id="txtClubName" name="txtClubName" class="aspNetDisabled dfinput required" style="width:200px;" />
+                    </td>
+                    <td style="text-align:right; color:#056dae;background: #F5F5F5;width:80px;">学校简称<span class="red">*</span>：</td>
+                    <td>
+                        <input type="text" value="" id="txtAbbreviation" name="txtAbbreviation" class="aspNetDisabled dfinput required" style="width: 200px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right; color:#056dae;background: #F5F5F5; ">所属地区 <span class="red">*</span>：</td>
+                    <td style=" padding-top:10px;" colspan="3">
+                        <input type="text" readonly="readonly" id="txtAddress" name="txtAddress" class="dfinput valid required" value="" style="width:300px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right; color:#056dae;background: #F5F5F5; height:50px;"></td>
+                    <td colspan="5"><input type="submit" name="btnSave" value="确定保存" id="btnSave" class="btn" /></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

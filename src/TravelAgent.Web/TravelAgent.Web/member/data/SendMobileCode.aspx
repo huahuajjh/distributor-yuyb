@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SendMobileCode.aspx.cs" Inherits="TravelAgent.Web.member.data.SendMobileCode1" %>

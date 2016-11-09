@@ -1,0 +1,37 @@
+﻿.srdzWrap{line-height:2em;background:#fff;min-height:540px;height:auto !important;height:540px;background:transparent;color:#fff;position:relative;font:14px/30px "Microsoft Yahei";width:960px;text-align:center; margin:0 auto;}
+.srdzWrap table {border-spacing: 0;}
+textarea, p, blockquote, th, td {outline: none;margin: 0;padding: 0;border: none;}
+.ss{position:absolute;top:116px;z-index:2;float:left;width:800px;height:480px;padding:25px 20px 20px 15px;transition:height .5s ease;text-align:left;left:94px;}
+.successWrap{text-align:left;font-size:18px;line-height:3em;color:#666;width:600px;margin-left:50px;}
+.ss input.lt,.ss input.lt2{width:154px;_width:157px;height:30px;color:#555;border:1px solid #C9CAC6;padding-left:10px;box-shadow:1px 1px 3px #DDDDDD inset;padding:3px;border:solid 1px #ccc;font:14px/30px "Microsoft Yahei";}
+.ss input.t3 {width:402px;_width:157px;height:30px;color:#555;border:1px solid #C9CAC6;padding-left:10px;box-shadow:1px 1px 3px #DDDDDD inset;padding:3px;border:solid 1px #ccc;font:14px/30px "Microsoft Yahei";}
+.ss input.lt2{width:540px;_width:557px;}
+.ss span{font:14px/30px "Microsoft Yahei";display:inline-block;width:57px;text-align:right;margin-right:0;background:#ddd;border:1px solid #ccc;color:#666;padding:0 10px;height:36px;line-height:36px;float:left;border-right:none;}
+.ss tr{height:58px;line-height:36px;}
+.lbltype{margin-right:20px;color:#666;margin-left:28px;}
+.mc_btn1{display:inline-block;font:700 22px/40px "Microsoft Yahei";text-align:center;color:#fff;border:0 none;border-bottom:2px solid #AE7225;background-color:#ff9418;cursor:pointer;overflow:hidden;outline:none;width:240px;float:right;margin-right:8px;margin-top:-30px;}
+.mc_btn2{display:inline-block;font:700 22px/48px "Microsoft Yahei";text-align:center;color:#fff;border:0 none;border-bottom:2px solid #AE7225;background-color:#ff9418;cursor:pointer;overflow:hidden;outline:none;width:550px;margin-left:82px;width:78px;font-size:16px;line-height:30px;margin:5px 5px -8px 5px;}
+.mc_btn2:hover{background-color:#ff7800;color:#fff;}
+.mc_btn1:hover{background-color:#ff7800;}
+.error_tip{line-height:23px;color:#493C3C;padding:0 5px 0 23px;border:1px solid #D6C198;font-size:14px;background:url(../images/err.gif) no-repeat #FEFCD9;position:absolute;left:0;top:58px;width:210px; display:none;}
+.list_city{position:absolute;z-index: 120; overflow: hidden; -moz-box-shadow: 2px 2px 5px rgb(51, 51, 51); width: 222px;background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #7F9DB9; margin: 0; min-height: 305px; padding: 0 0 4px; text-align: left; width: 220px;-moz-box-shadow: 2px 2px 5px rgb(51, 51, 51);-webkit-box-shadow: 2px 2px 5px rgb(51, 51, 51);}
+.list_city .list_city_head{background-color: #67A1E2; border: medium none; color: #FFFFFF; display: block; font-family: Simyou; line-height: 20px; padding: 2px 0 2px 9px; width: auto; word-wrap: break-word;}
+.list_city .list_city_head .msg{color:red;}
+.list_city .list_city_container{margin: 0; min-height: 257px; padding: 0;height:257px;}
+.list_city .list_city_container a{border-bottom: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF; color: #f60; cursor: pointer; display: block; height: 26px; line-height: 26px; min-height: 26px; overflow: hidden; padding: 1px 9px 0; text-align: left; text-decoration: none; height: 22px; display: block;}
+.list_city .list_city_container a b{font-weight:normal;}
+.list_city .list_city_container span{float: right; text-align:left; font: 10px/22px verdana; margin: 0; overflow: hidden; padding-left: 10px; ; white-space: nowrap; width: 85px; height:22px;}
+.list_city .selected{background: none repeat scroll 0 0 #FFE6A6; color: #FFFFFF; height: 22px}
+.list_city .page_break{line-height: 25px; margin: 0; padding: 0; text-align: center;}
+.list_city .page_break a{color: #0055AA; font-family: Arial,Simsun,sans-serif; font-size: 14px; margin: 0; padding: 0 4px; text-decoration: underline;}
+.list_city .page_break .current{color: #000000; text-decoration: none;}
+.remarkt{ padding-left:5px;width: 403px;height: 72px;font-family: Microsoft Yahei;box-shadow: 1px 1px 3px #DDDDDD inset;border: solid 1px #ccc; line-height:25px;}
+.pop_city{position: absolute;z-index: 9;width: 410px;font-size: 12px;border: 1px solid #ccc;background-color: #FFFFFF;-moz-box-shadow: 2px 2px 5px rgb(51, 51, 51);-webkit-box-shadow: 2px 2px 5px rgb(51, 51, 51);}
+.pop_city .pop_head{background-color: #ff9418; height: 40px; line-height: 40px; padding-left: 10px;color: #FFFFFF;}
+.pop_city .pop_head b{ font-size:16px;}
+.pop_city .pop_city_container{padding:4px;margin-bottom:20px;}
+.pop_city .pop_city_container ul{}
+.pop_city .pop_city_container ul li{width:23%;float:left;}
+.pop_city .pop_city_container ul li a{color: #000000; padding-left:20px;display: block; height: 32px; line-height: 32px;text-decoration:none; font-size:14px;}
+.type {width:160px; border:0;height:36px;font: 14px/30px "Microsoft Yahei"; padding-left:10px; color:#666;}
+.pop_city .pop_city_container ul li a:hover{ color:#f60;}

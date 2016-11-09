@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoadwapCalendar.aspx.cs" Inherits="TravelAgent.Web.mTravel.data.LoadwapCalendar" %>

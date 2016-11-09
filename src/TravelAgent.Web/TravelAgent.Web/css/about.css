@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-7-4, 11:34:15
+    Author     : Administrator
+*/
+/*父容器背景*/
+.allbg{width: 100%; background: #EEEEEE; }
+
+.aboutbox{width: 1198px; height: auto; margin: 25px auto 0; background: #FAFAFA; border: 1px solid #E5E5E5; overflow: hidden;}
+
+.aboutnav{width: 250px; height: auto;  float: left; overflow: hidden;}
+
+.aboutnav li{width: 249px; height: 50px; border-top: 1px solid #FFF; border-bottom: 1px solid #E5E5E5; border-right: 1px solid #e5e5e5; font: 400 16px/50px "微软雅黑",Arial,"宋体"; text-align: center;}
+
+.aboutnav li.current{width:246px; border-right:1px solid #FFF; border-left:3px solid #37B369; background: #FFF;}
+
+.aboutnav li.current a{color: #EE6611; font-weight: 700;}
+
+
+/*内容部分*/
+.aboutcon{width: 888px; height: auto; float: right; background: #FFF; padding:0 30px; overflow: hidden;}
+
+.aboutcon h1{width: 888px; height: 48px; border-bottom: 1px solid #37B369; font: 700 18px/48px "微软雅黑",Arial,"宋体";}
+
+.about_txt{width:888px; height: auto; line-height: 28px; padding-top: 20px; overflow: hidden;}
+
+.about_txt p{margin-bottom: 15px; font-size: 16px;  font-family: "微软雅黑",Arial,"宋体";}
+
+.about_txt_logo{display: block; float: left; margin-right: 30px;}
+
+/*营业执照*/
+.photo2{width: 888px; height: 190px; padding-top: 10px;}
+
+.photo2 img{ float:left;}
+
+.photo2 .ml30{margin-left: 30px;}
+
+/*康辉风采*/
+.photo3{width: 888px; height:auto; margin-top: 25px; overflow: hidden;}
+
+.photo3 h3{width: 888px; height: 40px; border-bottom: 1px solid #37B369; font: 400 16px/40px "微软雅黑",Arial,"宋体";}
+
+.photo3box{width: 888px; margin-top: 20px; overflow: hidden;}
+
+.photo3box img{float: left; display: block; cursor: pointer;}
+
+.photo3box .ml20{margin-left: 20px;}
+
+.photo4box{width: 888px; padding-bottom: 10px;  overflow: hidden;}
+
+.photo4box li{width: 439px; height: 329px; float: left; padding-top: 10px;}
+
+.photo4box li img{cursor: pointer;}
+
+.photo4box .ml10{margin-left: 10px;}

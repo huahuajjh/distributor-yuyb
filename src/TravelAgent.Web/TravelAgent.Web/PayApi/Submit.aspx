@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Submit.aspx.cs" Inherits="TravelAgent.Web.PayApi.Submit" EnableEventValidation="false" %>

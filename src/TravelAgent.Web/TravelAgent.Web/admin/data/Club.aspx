@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Club.aspx.cs" Inherits="TravelAgent.Web.admin.data.Club" %>

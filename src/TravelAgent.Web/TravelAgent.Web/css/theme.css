@@ -1,0 +1,182 @@
+@charset "utf-8";
+.photobox{ width: 100%; padding-bottom: 25px; background: #F5F7FA; border-bottom: 1px solid #DDD; }
+
+.photo{ width: 1200px; height: 350px; margin: 10px auto 0; }
+
+.photo li{ width: 232px; height: 165px; float: left; margin: 10px 0 0 10px; text-align: center; font: 700 20px/165px "寰蒋闆呴粦", Arial, "瀹嬩綋"; overflow: hidden; }
+
+.photo li a{ display: block; width: 232px; height: 165px; color: #FFF; }
+
+.photo li a:hover{ background: #37B369; text-decoration: none; color: #ff0; }
+
+.photo li.ph1{ background: #DF2E8B; margin: 10px 0 0 0; }
+
+.photo li.ph2{ background: #AEDDEE; }
+
+.photo li.ph3{ background: #D8D100; }
+
+.photo li.ph4{ background: #64B735; }
+
+.photo li.ph5{ background: #76C8CA; }
+
+.photo li.ph6{ background: #D8D100; margin: 10px 0 0 0; }
+
+.photo li.ph7{ background: #E94530; }
+
+.photo li.ph8{ background: #25782C; }
+
+.photo li.ph9{ background: #F09609; }
+
+.photo li.ph10{ background: #E00068; }
+/*主体部分*/
+.main{ width: 1200px; margin: 0 auto; }
+.themepic{width: 100%; height: 550px; margin: 0 auto;}
+/*left*/
+.themelist{ width: 980px; height: auto; float: left; overflow: hidden; }
+
+.themelist h3{width: 980px; height: 30px; margin-top: 25px; padding-bottom: 8px; font: 700 18px/30px "微软雅黑",Arial,"宋体";}
+
+.themelist h3.bord1{border-bottom: 2px solid #DF2E8B;}
+
+.themelist h3.bord1 a{color:#DF2E8B; }
+
+.themelist h3.bord2{border-bottom: 2px solid #37B369;}
+
+.themelist h3.bord2 a{color:#37B369; }
+
+.themelist h3.bord3{border-bottom: 2px solid #5AA1FC;}
+
+.themelist h3.bord3 a{color:#5AA1FC; }
+
+.themelist h3.bord4{border-bottom: 2px solid #64B735;}
+
+.themelist h3.bord4 a{color:#64B735; }
+
+.themelist h3.bord5{border-bottom: 2px solid #E94530;}
+
+.themelist h3.bord5 a{color:#E94530; }
+
+.themelist h3.bord6{border-bottom: 2px solid #EE6611;}
+
+.themelist h3.bord6 a{color:#EE6611; }
+
+.themelist h3.bord7{border-bottom: 2px solid #E94530;}
+
+.themelist h3.bord7 a{color:#E94530; }
+
+.themelist h3.bord8{border-bottom: 2px solid #25782C;}
+
+.themelist h3.bord8 a{color:#25782C; }
+
+.themelist h3.bord9{border-bottom: 2px solid #F09609;}
+
+.themelist h3.bord9 a{color:#F09609; }
+
+.themelist h3.bord10{border-bottom: 2px solid #E00068;}
+
+.themelist h3.bord10 a{color:#E00068; }
+
+/*线路部分*/
+.themebox{margin-top: 10px; width: 980px; height: auto; overflow: hidden;}
+
+.themebox li{width: 230px; height: auto; float: left; overflow: hidden; padding-right:15px;}
+
+.themebox li.pdlt{padding-left: 20px;}
+
+.themebox li img{display: block; width: 230px; height: 160px;}
+
+.themebox li p.theme_txt{width: 230px; height: 30px; margin-top: 5px; font: 400 14px/30px "微软雅黑",Arial,"宋体"; overflow: hidden;}
+
+.themebox li p.theme_pre{width: 230px; height: 30px; font: 400 16px/30px Verdana, Arial, "宋体"; color: #F60;}
+
+
+
+/*right*/
+.sidebar{width:198px; height:auto; border:1px solid #E5E5E5; border-top: 0; margin-top: 25px; _display:inline; float:right; overflow:hidden;}
+
+.sidebar h3{padding:4px 15px; height:30px; font:700 16px/30px "微软雅黑", Arial, "宋体"; background:#F5F4F4; border-bottom:1px solid #DDD; border-top:1px solid #DDD;}
+
+.th_line{width:178px; height:auto; padding:0 10px; overflow:hidden;}
+
+.th_line li{width:178px; padding:15px 0; line-height:22px; border-bottom:1px solid #E5E5E5; overflow:hidden;}
+
+.th_line li img{display:block; width:178px; height:135px; margin-bottom:8px;}
+
+.th_line li a{color:#0063DC;}
+
+.th_line li a:hover{color:#f60;}
+
+.th_line li p{ height:30px; line-height:30px;}
+
+.th_line li p span{color:#FF2900; font:400 14px/30px Verdana, Arial, "宋体";  vertical-align:middle;}
+
+.th_line li p s{color:#999; font-family:Verdana, Arial, "宋体"; margin-left:10px;}
+
+/*最新攻略*/
+.hot_search{width:168px; padding: 0 15px;}
+.hot_search li{height: 30px; line-height:30px; padding: 5px 0; border-bottom: 1px solid #EEE; background: url(../images/dot.gif) no-repeat left center; overflow: hidden;}
+.hot_search li a{margin-left: 8px; color:#555;}
+.hot_search li.borno{border: 0;}
+
+/*线路容器*/
+.theme_lt{width: 980px; height: auto; float: left; overflow: hidden;}
+
+/*线路来了！*/
+.linebox{width:980px; height:auto; overflow:hidden;}
+.linebox .linelist{width:978px; height:auto; border:1px solid #E5E5E5; margin-top:20px; overflow:hidden;}
+.linebox .linelist_hover{border: 1px solid #FFAA00; background:#F9FFF5;}
+/*上*/
+.linetop{width:948px; padding:15px; overflow:hidden;}
+/*图片*/
+.linepic{width:135px; height:90px; float:left;}
+.linepic img{width:135px; height:90px;}
+/*上 中*/
+.linecon{width:480px; height:90px; float:left; padding-left:20px; overflow:hidden;}
+/*标题*/
+.linecon .tit{width:480px; height:30px; font:400 16px/30px "微软雅黑", Arial, "宋体"; overflow:hidden;}
+.linecon .tit a{color:#0055CC; display:inline-block; float:left;}
+.linecon .tit a:hover{color:#F40;}
+.linebox .linelist_hover .tit a{color:#EE6611;}
+.linebox .linelist_hover .tit a:hover{color:#FF2900;}
+/*途径景点 和特色*/
+.linecon .sight{width:480px; height:20px; font:400 12px/20px Arial, "宋体"; color:#888; margin-top:10px; overflow:hidden;}
+/*相关小图标*/
+.lineico{width: 50px; height: 90px; float:left; padding-left: 20px;}
+.lineico i.tjbj{width:48px; height:15px; margin:8px 0 0 10px; display:inline-block; background:url(../images/hot_pin.png) 0 -30px; overflow:hidden;}
+.lineico i.thbj{width:48px; height:15px; margin:8px 0 0 10px; display:inline-block;  background:url(../images/hot_pin.png) 0 -15px; overflow:hidden;}
+.lineico i.gty{width:36px; height:14px; margin:8px 0 0 10px; display:inline-block; background:url(../images/gentuanyou.png) no-repeat;overflow:hidden;}
+.lineico i.zyx{width:36px; height:14px; margin:8px 0 0 10px; display:inline-block; background:url(../images/ziyouxing.png) no-repeat; overflow:hidden;}
+/*价格*/
+.linepre{width:100px; height:90px; float:right; text-align:center;}
+.linepre p.jia{height:30px; font:400 12px/30px Verdana, Arial, "宋体"; color:#888;}
+.linepre p.gzu{height:25px; font:400 12px/25px Verdana, Arial, "宋体"; color:#888;}
+.linepre a.xq{display:block; width:80px; height:30px; background:url(../images/xiangqing.png) no-repeat; margin:5px auto 0;}
+.linepre a.xq:hover{background:url(../images/xiangqing_hover.png) no-repeat;}
+/*下*/.linebot{width:978px; height:46px; background:#F5F7FA; padding:5px 0;}
+.linebot .botbox{width:190px; height:46px; border-right:1px solid #E5E5E5; float:left; text-align:center;}
+.linebot .botbox p{height:23px; line-height:23px;}
+.linebot .botbox p.s1{color:#777;}
+/*团期*/.linebot .tuanqi{height:23px; font:400 12px/23px Arial, "宋体"; overflow:hidden;}
+.linebot .tuanqi span{display:inline-block; height:23px;}
+
+/*日历*/.case_calendar{width: 958px; height: auto; border-top: 1px solid #CCC; padding: 15px 10px; float: left; display:inline; display: none; overflow: hidden;}
+.case_calendar_left{float: left; width: 479px;}
+.case_calendar_right{float: right; width: 479px;}
+/*线路分页*/
+.pages{width:980px; height:auto; font-size:14px; line-height:40px; padding-top:30px; text-align:center; overflow: hidden;}
+.pages a{background:#FFAA00; color: #fff; margin: 0 5px; padding: 8px 14px;}
+.pages a:hover{background:#F9A01F; color: #fff; text-decoration: none;}
+.pages .current{margin: 0 5px; padding: 8px 14px; background:#F9A01F; color: #fff;}
+.pages span{background:#F9A01F; color: #fff; margin: 0 5px; padding: 8px 14px;}
+
+/*右部分*/
+.sidebar2{width: 198px; height:auto; float: right;  margin-top: 20px; _display:inline; border: 1px solid #E5E5E5; border-top: 0; overflow: hidden;}
+
+.sidebar2 h4{padding:4px 15px; height:30px;  font:700 16px/30px "微软雅黑", Arial, "宋体"; background:#F5F4F4; border-bottom:1px solid #DDD; border-top:1px solid #DDD;}
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,input,section {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+body,button,input,select,textarea {font-family:"Microsoft YaHei",Arial; font-size: 1.4rem;-webkit-text-size-adjust: none}
+body {height: 100%; width:100%; margin:0 auto; min-width: 320px; color: #333; background-color: #F5F5F5; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-font-smoothing: antialiased; -moz-user-select: none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,iframe {display: block}
+button {width:100%;}
+h1,h2,h3,h4,h5,h6 {font-size: 100%; font-weight: 500}
+address,cite,dfn,em,var,i {font-style: normal; font-weight: 400}
+dfn {font-family: Arial}
+ul,ol {list-style: none}
+a {color: #333; text-decoration: none; font-size:1.4rem;}
+a:hover {-webkit-transition: color .2s linear; -moz-transition: color .2s linear; -ms-transition: color .2s linear; -o-transition: color .2s linear; transition: color .2s linear; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+fieldset,img,button,input {border: 0}
+button,input,select,textarea {font-size: 100%}
+table {border-collapse: collapse; border-spacing: 0}
+input {-webkit-appearance: none; border-radius: 0; font-size:1.5rem;}
+select{-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; padding-right:20px; width:100%; font-size: 20px; margin-right:10px;}
+input[disabled]{ background:#fff;}
+:focus {outline: 0}
+.clearfix:after {clear: both; content: '.'; display: block; height: 0; visibility: hidden; line-height: 0}
+.clear{clear: both; height: 0; line-height: 0;}
+/********************************页头*******************************************/
+.header {width: 100%; height: 50px; background: #FFAA11; position: relative; z-index: 100;}
+/*首页*/
+.header h1 { height: 40px; padding: 5px 0; background: url(../images/logo.png) no-repeat 10px center; background-size: 35px 35px;}
+.header h1 em{margin-left: 50px; height: 40px; font: 700 20px/40px "microsoft yahei","SimHei",Arial,sans-serif; color: #FFF;}
+/*返回上一页*/
+.ic_back {width: 50px; height: 44px; position: absolute; top: 0; left: 5px; display: block;}
+.ic_back:before {content: ''; width: 14px;  height: 14px; border-top: 2px solid #fff; border-left: 2px solid #fff; border-bottom: transparent; border-right: transparent; top: 50%; margin: -6px 0 0 -7px; left: 50%;  position: absolute;  -webkit-transform: rotate(-45deg); -o-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);}
+/*内页大标题*/
+.header h2 {margin: 0 auto; height: 50px; font: 700 1.2rem/50px "microsoft yahei","SimHei",Arial,sans-serif; color: #fff; text-align: center;}
+
+/*分类导航*/
+.navbtn{width: 22px; height: 22px; padding: 14px 20px; position: absolute; top: 0; right: 0; cursor: pointer; color: #fff; text-decoration: none; font-size: 16px; text-indent: -9999em; line-height: 22px; font-size: 1px; display: block; font-family: Arial,Helvetica,sans-serif; font-weight: 700;}
+.navbtn span {display: block; background: #fff; height: 3px; margin-top: 3px;}
+
+
+/*页脚*/
+.copyright {margin: 10px 10px 0; padding: 10px 0; background: #FFF; overflow: hidden;}
+.copyright p{text-align: center; font: 100 14px/25px "microsoft yahei","SimHei",Arial,sans-serif; color: #333;}
+.copyright p a{margin: 0 10px; font-size: 14px;}
+
+
+/*弹窗*/
+/*遮挡层*/
+.zhedang{z-index: 9998; position:fixed; bottom:0px; left:0; width:100%; height:100%; background:#000; opacity:0.6; filter:alpha(opacity=60); display:none}
+
+/*导航窗口*/
+.navbox{z-index:9999;  position:fixed;  top: 50px; margin: 0 auto; background-color:#fff; width: 100%; min-width: 320px; display: none;}
+.navbox_on{display: -webkit-box; display: -o-box; display: -moz-box; display: -ms-flexbox; display: box; box-orient: horizontal; width: 100%; padding: 10px 0 8px;}
+.navbox_on a{display: block; -webkit-box-flex: 1; -moz-box-flex: 1; -o-box-flex: 1; -ms-flex: 1; box-flex: 1; text-align: center; line-height: 20px;}
+.navbox_on a span{display: block; width: 30px; height: 35px; margin: 0 auto; background:url(../images/nav_logo.png) no-repeat; background-size: 250px 250px;}
+.navbox_on .ic_1{background-position: 0 0px;}
+.navbox_on .ic_2{background-position: -34px 0px;}
+.navbox_on .ic_3{background-position:-65px 0px;}
+.navbox_on .ic_4{background-position:-90px 0px;}
+.navbox_on em{font-size: .8rem; }
+
+/*搜索窗口*/
+.nav_search{z-index:9999; position:fixed; top: 50px; margin: 0 auto; background-color:#fff; width: 100%; max-width: 640px; min-width: 320px; display:none;}
+/*抬头*/
+.nav_search_tit {border-bottom:1px solid #ddd; background: #F5F7FA; height: 24px; padding:15px; position: relative;}
+.nav_search_tit h3{float: left; text-align: left; font-size: 18px; line-height: 24px; color: #008857; font-weight: 700;}
+.nav_search_tit .closebtn {float: right; color:#777; text-align: right; font:bold 1.6rem/24px simsun; text-shadow:0 1px 0 #ddd;}
+/*搜索部分*/
+.nav_search_on{width: 100%; color: #333; background: #FFF;}
+.searchbox{padding: 25px 15px;  border-bottom: 1px solid #E2E2E2;}
+.searchbox_top{width: 100%; height: 40px; position: relative; overflow: hidden;}
+.searchbox_top .s_ipt{display: block; width: 100%;  text-indent: 35px; height: 38px; border: 1px solid #DDD; font-size: 14px; line-height: 32px; color: #777;}
+.searchbox_top .x_ico{width: 22px; height: 22px; background: url(../images/nav_logo.png) no-repeat -53px -3px; background-size: 200px 200px;  position: absolute; left: 6px; top: 10px;}
+.searchbox_top .d_ico{ display: block; width: 60px; height: 40px; font: 700 16px/38px tahoma, Arial,"宋体"; text-align: center; color:#FFF; position: absolute; right: 0; top: 0; background-color: #008454;}
+
+/*产品分类*/
+.roboxs{z-index:9999; position:absolute; top: 0; margin: 0 auto; background-color:#fff; width: 100%; max-width: 640px; min-width: 320px; display:none;}
+.roboxs_tit{border-bottom:1px solid #ddd; background: #F5F7FA; height: 24px; padding:15px; position: relative;}
+.roboxs_tit h3{float: left; text-align: left; font-size: 18px; line-height: 24px; color: #008857; font-weight: 700;}
+.roboxs_tit .closebtn2 {float: right; color:#777; text-align: right; font:bold 1.6rem/24px simsun; text-shadow:0 1px 0 #ddd;}
+
+.rolinList{width: 100%; overflow:hidden;}
+.rolinList li{width: 100%; border-bottom:1px solid #E6E6E6; border-top:1px solid #FFF;}
+.rolinList li em{display:block; width: 100%; height:36px; background: #F5F7FA; font: 100 1rem/36px "microsoft yahei","SimHei",Arial,sans-serif; font-size:14px; text-indent:15px; position: relative;}
+.rolinList li em a{font: 700 1rem/36px "microsoft yahei","SimHei",Arial,sans-serif; display: inline; float: left;}
+.rolinList li em span{display: block; width: 16px; height: 16px; background: url(../images/jia.gif) no-repeat; position: absolute; right: 15px; top: 10px;}
+.rolinList li em.open span{background: url(../images/jian.gif) no-repeat;}
+.rocon{height:auto; padding:10px; background:#fff; font-size:.8rem; line-height:25px; overflow:hidden; display: none;}
+.rocon a{font:100 .8rem/25px "microsoft yahei","SimHei",Arial,sans-serif; margin:0 5px; display: inline-block; float: left;}
+
+.theme-popbod-one{width: 100%; color: #333; background: #FFF;}
+.theme-popbod-one .m_more_des {background: #fff; display: -webkit-box; border-bottom: 1px solid #ececec; width: 100%;}
+.theme-popbod-one .m_more_des span {-webkit-box-flex: 4; display: block; width: 25%;}
+.theme-popbod-one .m_more_des span a { display: block; border-bottom: 0px; font-size: 14px; color: #333; line-height: 20px; text-align: center; border-right: 1px solid #E2E2E2; padding: 15px 10px;}
+
+/*微名片*/
+.microbox{width: 100%; min-width: 320px; background: #f5f5f5;}
+.microbox_on{padding: 10px; height: 60px; display: -webkit-box;}
+.microbox_on .photos{width: 60px; height: 60px; margin-right: 15px;}
+.microbox_on .photos img{width: 60px; height: 60px; border-radius: 50%; display: block;}
+
+.microbox_on .texts{-webkit-box-flex: 1; box-flex: 1; height: 60px; position: relative;}
+.microbox_on .texts .texts_top{height: 30px; display: block; font: 700 1rem/30px "microsoft yahei","SimHei",Arial,sans-serif; color: #008857;}
+.microbox_on .texts .texts_bot{height: 28px; border-top: 2px solid #008857; display: block; font: 700 1.2rem/30px "microsoft yahei","SimHei",Arial,sans-serif;}
+.microbox_on .texts .texts_bot em{color: #f60;}
+
+.microbox_on .texts .telioc{width: 50px; height: 50px; padding: 5px; background:#F5F5F5 url(../images/pho.png) no-repeat center center; background-size: 50px 50px; position: absolute; right: 0; top: 0px;}
+.microbox_on .texts .telioc a{display: block; width: 50px; height: 50px;}
+
+.hotmdd {
+	height: auto;
+	margin: 20px 10px 0;
+	font-size: 14px;
+	font-family: tahoma, Arial,"瀹嬩綋";
+	text-align: center;
+	overflow: hidden;
+}
+.hotmdd li {
+	width: 25%;
+	display: inline-block;
+	float: left;
+	padding-right: 2px;
+	box-sizing: border-box;
+	padding-bottom: 2px;
+	font-family: "寰蒋闆呴粦",Arial,"瀹嬩綋";
+}
+.hotmdd li a {
+	background: #fff;
+	height: 32px;
+	display: block;
+	line-height: 32px;
+	font-size: 14px;
+}

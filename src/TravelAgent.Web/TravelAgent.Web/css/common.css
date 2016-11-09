@@ -1,0 +1,36 @@
+﻿/*在线客服*/
+.rides-cs {  font-size: 12px; position: fixed; top: 250px; right: 0px; _position: absolute; z-index: 1500; border-radius:6px 0px 0 6px;}
+.rides-cs a { color: #00A0E9;}
+.rides-cs a:hover { color: #ff8100; text-decoration: none;}
+.rides-cs .floatL { width: 36px; float:left; position: relative; z-index:1;margin-top:0;height: 181px; background:#EE6611;border-radius:6px 0 0 6px;}
+.rides-cs .floatL a { font-size:0; text-indent: -999em; display: block;}
+.rides-cs .floatR {float: left; padding: 5px; overflow:hidden;width: 150px; background:#EE6611;}
+.rides-cs .floatR .cn {background:#F7F7F7; border-radius:3px;}
+.rides-cs .cn .titZx{ font-size: 14px; color: #666;font-weight:600; line-height:24px;padding:5px;text-align:left;border-top: solid 1px #E6E4E4;}
+.rides-cs .cn .titQq{line-height:24px;}
+.rides-cs .cn .btom{ font-size: 14px; color: #666;font-weight:600; line-height:24px;padding:5px;text-align:center;border-top: solid 1px #E6E4E4;}
+.rides-cs .cn ul {padding:0px; background:#FFF;}
+.rides-cs .cn ul li { line-height: 38px; height:38px;overflow: hidden;text-align:center;}
+.rides-cs .cn ul.qq{}
+.rides-cs .cn ul.qq li{float:left; width:75px;border-bottom: none; background-color:White;}
+.rides-cs .cn ul li span { color: #777;}
+.rides-cs .cn ul.qq li span { padding-left:3px;}
+.rides-cs .cn ul li a{color: #777;}
+.rides-cs .cn ul li img { vertical-align: middle;}
+.rides-cs .cn ul li em{font-size:14px; color:#c00; font-family:Arial;}
+.rides-cs .btnOpen, .rides-cs .btnCtn {  position: relative; z-index:9; top:11px; left: 0;  background-image: url(../images/shopnc.png); background-repeat: no-repeat; display:block;  height: 146px; padding: 8px;}
+.rides-cs .btnOpen { background-position: -410px 0;}
+.rides-cs .btnCtn { background-position: -450px 0;}
+.rides-cs ul li.top { border-bottom: solid #ACE5F9 1px;}
+.rides-cs ul li.bot { border-bottom: none;}
+/*底部广告条*/
+.float_mask{position: fixed;z-index: 19999;display:none;width: 100%;right: 0; bottom: 0;height: 105px;_bottom: auto;_width: 100%;_position: absolute;
+_top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+.float_layer{position: absolute;left: 0;top: 0;z-index: 1;width: 100%;height: 100%;background: #071828;filter: alpha(opacity=80);opacity: 0.80;}
+.float_content{ position: relative;z-index: 2;width: 1005px;height: 100%;margin: 0 auto;padding-left: 70px;}
+.float_bg, .float_close{ float: left;}
+.float_bg{position: relative;width: 820px;height: 135px;margin-top: -27px;}
+.float_slogan {position: absolute; background: url("../images/footer_ad.png") 0 0 no-repeat;}
+.float_slogan{left: 0;bottom: 0;width: 800px;height: 135px;cursor: pointer;}
+.float_close{width: 60px;margin-top: 30px;}
+.float_close a {display: block;width: 53px; height: 52px; margin-left: 7px; background: url("../images/close.png") 0 0 no-repeat;-webkit-transition: all 400ms;}

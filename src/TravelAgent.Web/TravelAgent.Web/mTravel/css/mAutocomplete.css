@@ -1,0 +1,74 @@
+﻿@CHARSET "UTF-8";
+
+/********************************
+A jQuery plugin for search hints
+
+Author: Lorenzo Cioni 
+https://github.com/lorecioni
+********************************/
+
+.autocomplete-container {
+	position: relative;
+	width: 283px;
+	height: 32px;
+	margin: 0 auto;
+}
+
+.autocomplete-input {
+	padding: 9px;
+	border-radius: 3px;
+	font-family: inherit;
+	float: left;
+	font-size: 1em;
+	border: 1px solid #ccc;
+	margin: 0;
+}
+
+.autocomplete-button {
+	font-family: inherit;
+	border: none;
+	background-color: #990101;
+	color: white;
+	padding: 8px;
+	float: left;
+	cursor: pointer;
+	border-radius: 0px 3px 3px 0px;
+	transition: all 0.2s ease-out 0s;
+	margin: 0.5px 0px 0px -1px;
+}
+
+.autocomplete-button:HOVER {
+	background-color: #D11E1E;
+}
+
+.proposal-box-m {
+	height: auto;
+    width:100%;
+}
+
+.proposal-list-m {
+	list-style: none;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+        padding-top: 10px;
+}
+
+.proposal-list-m li {
+	text-align: left;
+	padding: 5px !important;
+	font-family: inherit;
+	border-top: 1px solid #ccc;
+        border-bottom: 0 !important;
+	height: 25px;
+	line-height: 25px;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+li.proposal.selected {
+	background-color: rgb(175, 42, 0);
+	color: white;
+}

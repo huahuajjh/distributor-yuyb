@@ -1,0 +1,393 @@
+/*产品详情*/
+.linedetail{
+        display: block;
+        width: 100%;
+}
+
+.linedetail_box{
+        display: block;
+	margin-bottom: 10px;
+        padding: 10px;
+        background: #FFF;
+        border: 1px solid #E5E5E5;
+}
+
+.linedetail_pic{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+}
+
+.linedetail_pic img{
+        display: block;
+        width: 100%;
+        height: 100%;
+}
+
+.linedetail_tit{
+        display: block;
+        width: 100%;  
+        min-height: 37px;
+        position: absolute;
+        left: 0;
+        bottom:3px;
+
+}
+.linedetail_tit h1{
+        min-height: 25px;
+        display: block;
+        padding: 6px 10px;       
+        background: rgba(255,255,255,.8);
+        margin: 0 3px;
+        text-align:left;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #034c32;
+        line-height: 25px;
+}
+
+.linedetail_pre{
+        width: 100%;
+        height: 30px;        
+        padding-top: 10px;
+        display: -webkit-box;
+        display: -o-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: box;
+        box-orient: horizontal;
+        text-align: center;
+}
+
+.linedetail_pre span{
+        display: block;
+        width: 32%;
+        height: 30px;
+        border-right: 1px solid #D5D5D5;
+        text-align: center;
+        font: 100 14px/30px "Microsoft YaHei","微软雅黑",Arial,"宋体";
+}
+.linedetail_pre strong{
+        width: 34%;
+        display: block;
+        height: 30px;
+        font: 700 1rem/30px Verdana, SimSun, Arial; 
+        color: #F40;
+}
+
+/*出发日期及余位*/
+.linedetail_date{
+        width: 100%;
+        text-align: left;
+        display: block;
+}
+.linedetail_date p{
+        width: 100%;
+        padding: 5px 0;
+        display: block;
+        font: 400 14px/30px "Microsoft YaHei","微软雅黑",Arial,"宋体";
+        border-bottom: 1px solid #D5D5D5;
+}
+
+.noborder,.linedetail_date p.noborder{border: 0;}
+
+/*行程特色*/
+.linedetail_xin_tit{
+        display: block;
+        height: 20px;
+        padding: 10px;
+        background: #FFAA11;
+        font: 700 1rem/20px "Microsoft YaHei","微软雅黑",Arial,"宋体";
+        color: #FFF;
+}
+/*行程 收缩*/
+.linedetail_xin_con{        
+        font-size: 14px;
+        line-height: 28px;
+        padding: 10px 0 20px;
+        width: 100%;
+        max-height: 168px;
+        position: relative;
+        overflow: hidden;
+}
+
+
+
+.linedetail_xin_btn,.linedetail_xin_btn2{
+        width: 100%;
+        height: 10px;
+        padding-top: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        background: #fff;
+        text-align: center;
+}
+
+.linedetail_xin_btn span,.linedetail_xin_btn2 span{
+        display: block;
+        margin: 0 auto;
+        width:0; 
+        height:0; 
+        border-left:10px solid transparent;
+        border-right:10px solid transparent;
+        border-top:10px solid #F60;
+        position: relative;
+}
+
+.linedetail_xin_btn span s,.linedetail_xin_btn2 span s{
+        display: block;
+        margin: 0 auto;
+        width:0; 
+        height:0; 
+        border-left:10px solid transparent;
+        border-right:10px solid transparent;
+        border-top:10px solid #FFF;
+        position: absolute;
+        bottom: 2px;
+        left: -10px;
+}
+
+/*行程展开*/
+.line_xinbox_down,.line_xinbox_down2{
+        max-height: none;
+}
+
+.line_xinbox_down .linedetail_xin_btn span,.line_xinbox_down2 .linedetail_xin_btn2 span{
+        border-bottom: 10px solid #F60;
+        border-top:none;
+}
+
+.line_xinbox_down .linedetail_xin_btn span s,.line_xinbox_down2 .linedetail_xin_btn2 span s{        
+        border-bottom: 10px solid #FFF;
+        border-top:none;
+        top: 2px;
+        left: -10px;
+}
+
+
+.linetrip{
+	font-size: 14px;
+        padding: 10px 0 20px;
+        width: 100%;
+        overflow: hidden;
+}
+
+.linetrip_top{font-size: .8rem;}
+.linetrip_top p{margin-top: 15px; line-height: 25px; border-bottom: 1px dotted #A2A2A2; padding-bottom: 15px}
+
+.linetrip_top p em{padding: 0 5px; background: #00A201; color: #FFF; margin-right: 10px;}
+.linetrip_top p img{vertical-align: middle;}
+
+.linetrip_bot {margin: 10px 0;}
+
+/*详细行程*/
+.linedatail_xiangxi{
+        display: block;
+        font-size: 14px;
+        line-height: 28px;
+        padding: 10px 0 1.4em;
+        width: 100%;
+        max-height: 168px;
+        position: relative;
+        overflow: hidden;
+}
+
+.linedetail_xin_btn3{
+        display: block;
+        width: 100%;
+        padding-top: .4em;
+        height: 1em;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        background: #fff;
+        text-align: center;
+}
+
+.linedetail_xin_btn3 span{
+        vertical-align: middle;
+        content: '';
+        display: inline-block;
+        width: .8em;
+        height: .8em;
+        border-left: .0714285em solid #F60;
+        border-top: .0714285em solid #F60;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+}
+
+/*预订按钮*/
+.yuding_btn {
+        display: -webkit-box;
+        display: -o-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: box;
+        box-orient: horizontal;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        background: #FF9E2B;
+}
+.yuding_btn a{
+        display: block;
+        width: 50%;
+        height: 50px;
+        font: 700 1.2rem/50px "Microsoft YaHei","微软雅黑",Arial,"宋体";
+        text-align: center; 
+        color: #FFF;
+}
+.yuding_btn a.yuding_tel{
+        background: #FF9E2B;
+}
+.yuding_btn a.yuding_onclik{
+        background: #FF6600;
+}
+
+/*************************3级页面 详细行程***************************/
+.threeBox{
+        display: block;
+        width: 100%;
+        padding-top:10px;
+}
+
+.threeBox .threeBox_trip{
+        margin:10px;
+        padding: 15px;
+        background: #FFF;
+        line-height: 28px;
+        border: 1px solid #E5E5E5;
+        font-size: 14px;
+}
+.threeBox .threeBox_trip .days{
+	font: 700 1rem/30px "microsoft yahei","SimHei",Arial,sans-serif;
+}
+
+.threeBox .threeBox_trip .days strong{color: #f80;}
+.threeBox .threeBox_trip .days span{margin-left:10px; color: #754;}
+
+.threeBox .threeBox_trip .chis,.threeBox .threeBox_trip .zhus{min-height: 30px; font: 400 1rem/30px "microsoft yahei","SimHei",Arial,sans-serif; color: #008454;}
+.threeBox .threeBox_trip .zhus{border-bottom:1px dotted #CCC;}
+
+.threeBox .threeBox_trip .cons{margin-top: 15px; font:100 1rem/26px "microsoft yahei","SimHei",Arial,sans-serif; color: #666;}
+
+/***********************************预订**********************************/
+.threeBox .threeBox_book{
+        margin: 0 10px;
+        padding: 10px;
+        background: #FFF;
+        border: 1px solid #E5E5E5;
+}
+
+.threeBox .threeBox_book h1{
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font: 700 1rem/28px "Microsoft YaHei","微软雅黑",Arial,"宋体";
+        color: #008857;
+        border-bottom: 1px solid #D5D5D5;
+}
+
+.threeBox .threeBox_book .threeBox_book_box{
+        width: 100%;
+        display: -webkit-box;
+        display: -o-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: box;
+        box-orient: horizontal;
+        padding-top: 15px;
+}
+
+.threeBox .threeBox_book .threeBox_book_box p{
+        font-size: 14px;
+}
+
+.threeBox .threeBox_book .threeBox_book_box p.theleft{
+        width: 26%;
+        height: 32px;
+        line-height: 32px;
+        color: #666;
+}
+
+.threeBox .threeBox_book .threeBox_book_box p.theright{
+        width: 74%;
+        display: block;
+        height: 32px;        
+}
+
+.threeBox .inputbox{
+        display:block;
+        width: 99%;
+        height: 30px;
+        border: 1px solid #D5D5D5;
+        text-indent: 5px;
+        font: 400 14px/30px Verdana, SimSun, Arial; 
+        background: none;
+}
+
+.threeBox .inputbox:focus,.threeBox .textareabox:focus{border-color: #A6E1F3; box-shadow: 0 0 12px #BAF7FF;}
+
+.threeBox .threeBox_book .threeBox_book_box p.theleft2{
+        width: 26%;
+        height: 90px;
+        line-height: 32px;
+        color: #666;
+}
+
+.threeBox .threeBox_book .threeBox_book_box p.theright2{
+        width: 74%;
+        display: block;
+        height: 90px;        
+}
+
+
+.threeBox .textareabox{
+        display:block;
+        width: 99%;
+        height: 90px;
+        border: 1px solid #D5D5D5;
+        font: 400 14px/30px Verdana, SimSun, Arial; 
+        background: none;
+}
+
+/*********按钮*******/
+.threeBox .threeBox_btn{
+        display: block;
+        width: 100%;
+        height: 45px;
+        padding: 20px 0 10px;
+        margin-top: 20px;
+        border-top: 1px solid #D5D5D5; 
+        display: -webkit-box;
+        display: -o-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: box;
+        box-orient: horizontal;
+}
+
+.threeBox .threeBox_btn a{
+        display: block;
+        width: 50%;
+        height: 45px;
+        text-align: center;
+        color: #FFF;
+        font: 700 1rem/45px "Microsoft YaHei","微软雅黑",Arial,"宋体";
+}
+
+.threeBox .threeBox_btn .threeBox_btn_back{
+
+        background:#FF9E2B;
+}
+.threeBox .threeBox_btn .threeBox_btn_tijiao{
+        background: #FF6600;
+}

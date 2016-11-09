@@ -1,0 +1,149 @@
+.visa{width: 1000px; height:auto; margin: auto; overflow: hidden; margin-bottom:10px;}
+.noborder{border:0;}
+/*右*/
+.visa_R{width:754px; height: auto; float: right; overflow: hidden;}
+
+/*流程*/
+.liucheng{width:754px; margin-top: 15px;}
+.visa_titile{width: 752px; height:36px; line-height:36px;  border: 1px solid #ddd; background:url(../images/visa_bg.gif) 0 0 repeat-x; text-align: left; margin-top: 15px;}
+.visa_titile h2{height: 29px; float: left;  padding: 0 10px; font-size: 14px; color: #EE6611;}
+.visa_box{width: 722px; height: auto;  border-top: none; padding: 0 15px 13px;  border: 1px solid #DDD; border-top: none;}
+.visa_con{width: 722px; height: auto; border-bottom: 1px dotted #A2A2A2; padding: 15px 0; line-height: 30px; overflow: hidden;}
+.visa_con dt{width: 82px; float: left; padding-right: 10px; color: #FFAA11; font-size: 14px; font-weight:bold;}
+.visa_con dd{width: 630px; float:right; height: auto; overflow: hidden; text-align:center; font-size: 14px;}
+.visa_con dd a{width: 70px; white-space:nowrap; float:left; color:#03a0e2;}
+
+
+/*签证分类*/
+.qianzheng{width: 752px; height: auto; border: 1px solid #DDD; border-top: none; overflow: hidden;}
+.qianzheng_box{width:722px; height:33px; margin: 0 15px;  padding-top: 15px; float: left; background:url(../images/title_border.gif) 0 45px repeat-x;}
+.qianzheng_box h3{float:left; height:30px; line-height:30px; border-bottom:3px solid #FFAA11; font-size: 14px; color: #EE6611; display:inline-block; padding:0 10px 0 5px; font-family:Microsoft YaHei;}
+.qianzheng dl{width:204px; height:200px; padding:15px 23px; float: left; text-align: left;}
+.qianzheng dt{width:200px; height:140px; border:2px solid #ccc; float: left; }
+.qianzheng dt img{width:200px; height:140px; float: left;}
+.qianzheng dd{width:202px; height:58px; line-height:58px; float: left; overflow: hidden;}
+.qianzheng dd h4{width:150px; height:58px; float: left; font-size: 14px; overflow: hidden;}
+.qianzheng dd h4 a{color: #3366CC;}
+.qianzheng dd h4 a:hover{ color:#f60;}
+.qianzheng span{width:50px; height:58px; display: block; float: right; color: #f60; font-family:Arial, Helvetica, sans-serif;}
+.qianzheng b{font-size:18px; padding-left:3px;}
+
+/*注意事项*/
+.zhuyi{width: 722px; height: auto; border: 1px solid #DDD; border-top: none; padding: 0 15px 15px; text-align: left; overflow: hidden;}
+.zhuyi p{line-height: 25px; margin-top: 12px; font-size: 14px; color: #555;}
+
+/*左*/
+.visa_L{width: 229px; overflow: hidden; border: 1px solid #ddd; margin:15px 0 0 0; text-align: left;}
+.visa_L_box_title{width:219px; height:36px; line-height:36px; padding:0 0 0 10px;  color: #EE6611; background:url(../images/visa_bg.gif) 0 0 repeat-x; float:left;}
+.visa_L_box_title h3{float: left; font-size: 14px; color: #FFAA11;}
+.visa_L_box_title span{float: right; display: block;}
+.visa_L_box_title span a{color:#f60; padding-right:10px; font-family:Arial, Helvetica, sans-serif;}
+.visa_L_box{width:209px; padding: 0 10px;  overflow: hidden; border-bottom:1px solid #ddd;}
+.visa_L_box li{width:160px; padding:0 0 5px 49px; height:40px; line-height:20px; margin:20px 0; overflow: hidden; color:#666;}
+.visa_L_box li b{color:#EE6611; display:inline-block; padding:0 10px 0 0;}
+.visa_L_box li.visa_L_box_0{background:url(../images/visa_bg.gif) -105px -36px no-repeat; border-bottom:1px solid #eee; }
+.visa_L_box li.visa_L_box_1{background:url(../images/visa_bg.gif) -105px -76px no-repeat; border-bottom:1px solid #eee;}
+.visa_L_box li.visa_L_box_2{background:url(../images/visa_bg.gif) -105px -116px no-repeat;}
+.visa_L_box2,visa_L_box3{width:209px;  padding:0 10px; overflow: hidden;}
+.visa_L_box2 li{width:190px; padding-left:19px; height:36px; line-height:36px; background: url(../images/visa_bg.gif) -127px -155px no-repeat; overflow: hidden;}
+.visa_L_box2 li a,.visa_L_box3 li a{color:#333;}
+.visa_L_box2 li a:hover,.visa_L_box3 li a:hover{color:#03a0e2;}
+.visa_L_box3 li{width:190px; padding-left:10px; height:36px; line-height:36px; overflow: hidden; }
+.visa_L_box3 li a{ margin-left:5px;}
+/*签证列表页*/
+.visa_list{width: 754px; height: 40px; line-height: 40px; margin-top: 15px;}
+.visa_list img{width:56px; height:39px; padding:1px; border: 1px solid #DDD; float: left; display:block;}
+.visa_list h1{float: left; font-size: 20px; color: #FFAA11; padding-left: 20px; font-family:Microsoft YaHei;}
+.visa_list_con{width:732px; height: auto; margin-top: 15px; border: 1px solid #ddd; padding: 10px;}
+
+/*签证分类*/
+
+.visa_content{width: 732px; height: 75px; padding: 15px 0; border-bottom: 1px solid #DDD;}
+.visa_content_pic{width:80px; height:70px; float: left; padding:8px 20px;}
+.visa_content_pic img{width:80px; height: 70px; display: block; float:left;}
+.visa_content_txt{width: 200px; padding-right: 30px; height: 75px; float: left; line-height: 25px; text-align: left;}
+.visa_content_txt p{width: 200px; height: 25px; font-size: 12px; overflow: hidden;}
+.visa_content_txt p a{color:#03a0e2; font-weight:bold; font-size: 14px;}
+.visa_content_txt p a:hover{color:#f60;}
+.visa_content_shichang{width: 200px; height: 75px; float: left; line-height: 75px; font-size: 14px; text-align: left;}
+.visa_jiage{width: 90px; height: 60px; padding: 7px 0; float:right; text-align: center;}
+.visa_jiage p{ height: 30px; line-height: 30px;}
+.visa_jiage p i,.visa_txt_con p i{color: #f60; font-family:Arial, Helvetica, sans-serif;}
+.visa_jiage p b,.visa_txt_con p b{font-size: 18px; color:#f60; padding: 0 3px;  font-family:Arial, Helvetica, sans-serif;}
+.visa_jiage p a{background:url(../images/visa_bg.gif) 0 -41px no-repeat; width:64px; height:24px; display:inline-block;}
+.visa_jiage p a:hover{background-position: 0 -65px;}
+
+
+/*签证内容页*/
+.visa_txt{width: 722px; height: auto; margin-top: 15px; padding: 15px; border: 1px solid #ddd; overflow: hidden;}
+.visa_txt_pic{width:200px; height:140px; float: left; margin-right:20px; display:inline; border:1px solid #ddd;}
+.visa_txt_pic img{width:200px; height:140px; float:left;}
+.visa_txt_con{width:368px; height:105px; float:left; text-align: left;}
+.visa_txt_con h1{font-size:16px; height:30px; line-height: 30px; color: #EE6611; font-family:Microsoft YaHei;}
+.visa_txt_con p{height:27px; line-height:27px;}
+.visa_txt_yuding{width:130px; height:38px; float: right; padding: 46px 0;}
+.visa_txt_yuding a{display:inline-block; width:121px; height:38px; background:url(../images/visa_bg.gif) 0 -165px no-repeat;}
+.visa_txt_yuding a:hover{background-position:0 -203px;}
+
+/*提示*/
+.tishi{width: 722px; height: auto; margin-top: 15px; padding: 10px 15px; line-height: 30px; border: 1px solid #FFD6A1; background: #FFFEF1; overflow: hidden; text-align: left; overflow:hidden; color: #663300;}
+.tishi h2{line-height: 35px; font-size: 14px; color:#f60;}
+.cailiao{width: 722px; height: auto; border: 1px solid #DDD; border-top: none; padding: 10px 15px 10px; text-align: left; line-height: 26px; overflow: hidden;}
+
+/*预订*/
+
+.book{width: 958px; height: auto; margin:15px auto 10px; padding: 20px; border: 1px solid #ddd; overflow: hidden;}
+.book_title{width: 636px;  padding:20px 160px; border: 1px solid #ddd; text-align: center;}
+.book_pic{width: 80px; height:56px; float: left;}
+.book_pic img {width: 80px; height:56px; border:2px solid #ddd; float: left;}
+.book_con{width: auto; height: 50px; padding-left: 30px; font-size: 14px; line-height: 25px; text-align: left; overflow: hidden;}
+.book_con p i,.book_con strong{font-size: 16px;}
+.book_con p i {color:#f60;}
+.book_con p strong{color:#FFAA11;}
+.book_con p span{padding-right: 50px;}
+.book_con p big{font-size: 18px; color: #ff0000; padding: 0 3px;}
+.book_con em{color:#f60;}
+
+/*预订开始*/
+.book_go{width: 756px; height: auto; padding: 30px 60px 30px 140px; border: 1px solid #ddd; border-top: none; text-align: left; font-size: 14px; overflow: hidden;}
+.book_go h2{width: 756px; height: 20px; font-size: 14px; line-height: 20px; padding: 10px 0;}
+.book_go li.one{width: 378px; height: 20px; font-size: 14px; line-height: 20px; padding: 10px 0; float: left;}
+.book_go li.two{width: 322px; height: 20px; font-size: 14px; line-height: 20px; padding: 10px 0 10px 56px; float: left;}
+.book_go li.three{width: 736px; height: auto; font-size: 14px; line-height: 20px; padding: 10px 0; float: left; overflow: hidden;}
+.book_go li.four{width: 378px; height: 20px; font-size: 14px; line-height: 20px; padding: 10px 0 10px 0px; float: left;}
+.book_go li span{float: left; font-size:12px; display:inline-block; padding-left:5px;}
+.book_go li.four span{float: left; font-size:12px; display:inline-block; padding-left:12px;}
+.qzleft-cor{ width:110px; padding-left: 2px; height: 18px; line-height: 18px; border: 1px solid #ddd; float:left;}
+.qz-width{ width:112px;  float:left;}
+
+.mianze{width: 896px; height: auto; padding: 30px 30px 10px; border: 1px solid #ddd; border-top: none; line-height: 30px; text-align: left; overflow: hidden;}
+
+
+/*帮助信息*/
+.help_title{width: 958px; height:60px; line-height:40px; text-align:center; }
+.help_title h1{font-size:20px; color:#FFAA11; font-family:Microsoft YaHei;}
+.help{width: 958px; height: auto; text-align: left; overflow: hidden;}
+.help li.one{width: 918px; height: auto; background:#f9f9f9; padding: 10px 20px;}
+.help li.two{width: 918px; height: auto; background: #fff; padding: 10px 20px;}
+.help li h3{height: 30px; line-height:30px; font-size:14px; color:#555;  font-family:Microsoft YaHei; background:url(../images/visa/visa_bg.gif) -127px -159px no-repeat; padding-left:20px;}
+.help li p{line-height: 25px; color:#666; font-size: 12px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
