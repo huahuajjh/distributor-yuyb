@@ -360,5 +360,33 @@ namespace TravelAgent.Model
             set { _holiday = value; }
             get { return _holiday; }
         }
+
+        /// <summary>
+        /// get a shop price
+        /// written by jjh
+        /// </summary>
+        /// <returns></returns>
+        public int GetShopPrice()
+        {
+            if (string.IsNullOrWhiteSpace(PriceContent))
+            {
+                return 0;
+            }
+            else
+            {
+                string[] prices_list = PriceContent.Split(',');
+                if (prices_list == null || prices_list.Length == 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    int temp = 0;
+                    int.TryParse(prices_list[0],out temp);
+                    return temp;
+                }
+            }
+        }
+
     }
 }

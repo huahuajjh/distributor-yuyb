@@ -29,6 +29,12 @@ namespace TravelAgent.Web.member
             else
             {
                 club = clubBll.GetModel(Convert.ToInt32(strUid));
+
+                if (club.IsLocked())
+                {
+                    Response.Redirect("/member/Login.aspx");
+                }
+
                 if (TravelAgent.Tool.StringPlus.PasswordStrength(club.clubPwd) == TravelAgent.Tool.EnumSummary.Strength.Normal)
                 {
                     strPasswordStrengthcss = "middle";

@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 .main{width:1200px; margin:0 auto;}
 /*右边*/
@@ -77,7 +77,7 @@
 .linebox .linelist{width:978px; height:auto; border:1px solid #E5E5E5; margin-top:20px; overflow:hidden;}
 .linebox .linelist_hover{border: 1px solid #FFAA00; background:#F9FFF5;}
 /*上*/
-.linetop{width:948px; padding:15px; overflow:hidden;}
+.linetop{width:948px; padding:15px; overflow:hidden;height:150px;}
 /*图片*/
 .linepic{width:135px; height:90px; float:left;}
 .linepic img{width:135px; height:90px;}

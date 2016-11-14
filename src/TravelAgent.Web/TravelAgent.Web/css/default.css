@@ -74,10 +74,11 @@ a:hover {
 }
 .gzd
 {
-		font-size:12px;
-		float:right;
-		color:#cccdcb;
-	}
+	font-size:10px;
+	float:left;
+	color:#cccdcb;
+
+}
 .l14 {
 	font-size:14px;
 	color:#EE6611;

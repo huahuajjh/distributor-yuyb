@@ -172,7 +172,7 @@
                                         <tr>
                                             <td class="td1"><i>*</i>推荐人：</td>
                                             <td colspan="3">
-                                                <input autocomplete="off" maxlength="200" style="width: 510px; color: #aaa;" name="txt_tuijianren" class="input2 J_place" id="txt_tuijianren" placeholder="请输入本校名称或者推荐人姓名即可查找推荐人信息，无推荐人输入学校名称即可" alt="请填写本校名称即可查找推荐人信息" />
+                                                <input autocomplete="off" maxlength="200" value="NA" readonly style="width: 510px; color: #aaa;" name="txt_tuijianren" class="input2 J_place" id="txt_tuijianren" placeholder="请输入本校名称或者推荐人姓名即可查找推荐人信息，无推荐人输入学校名称即可" alt="请填写本校名称即可查找推荐人信息" />
                                                 <span style="color: Red;" id="span_tuijianren"></span>
                                             </td>
                                         </tr>

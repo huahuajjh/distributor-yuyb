@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using TravelAgent.Tool;
 namespace TravelAgent.Web.member
 {
@@ -23,6 +18,11 @@ namespace TravelAgent.Web.member
                     TravelAgent.Model.Club model = ClubBll.GetModel(strUserName, strPassWord);
                     if (model != null)
                     {
+                        if (model.IsLocked())
+                        {
+                            Response.Redirect("/Opr.aspx?t=o&msg=locked");
+                        }
+
                         double day = 1.0;
                         if (Request["cooktime"] != null)
                         {

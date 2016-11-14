@@ -454,7 +454,8 @@ namespace TravelAgent.Web
                 }
                 else
                 {
-                    sbList.Append("<p class=\"jia\"><font class=\"h014\">¥</font><font class=\"ho18\">" + row["priceCommon"] + "</font> 起</p>");
+                    sbList.Append("<p class=\"jia\"><font class=\"h014\">¥</font><font class=\"ho18\">" + "</font>同行价 </p>" + row["priceCommon"]);
+                    sbList.Append("<p class=\"jia\"><font class=\"h014\">¥</font><font class=\"ho18\">" + "</font>市场价 </p>" + row["priceContent"].ToString().Split(',')[0]);
                 }
                 
                 sbList.Append("<p class=\"gzu\">"+row["gzd"]+"人关注</p>");

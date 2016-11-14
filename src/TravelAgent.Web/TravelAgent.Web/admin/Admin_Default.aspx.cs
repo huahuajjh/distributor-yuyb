@@ -282,14 +282,6 @@ namespace TravelAgent.Web.admin
             {
                 sbNav.Append("<li><cite></cite><a href=\"javascript:void(0);\" onclick=\"Tabs('club/GroupEmail.aspx')\">邮件群发</a><i></i></li>");
             }
-            if (Admin.Role.roleAuth.IndexOf(",school,") > -1)
-            {
-                sbNav.Append("<li><cite></cite><a href=\"javascript:void(0);\" onclick=\"Tabs('school/index.html')\">学校管理</a><i></i></li>");
-            }
-            if (Admin.Role.roleAuth.IndexOf(",person,") > -1)
-            {
-                sbNav.Append("<li><cite></cite><a href=\"javascript:void(0);\" onclick=\"Tabs('person/index.html')\">推介人管理</a><i></i></li>");
-            }
             return sbNav.ToString();
         }
         /// <summary>

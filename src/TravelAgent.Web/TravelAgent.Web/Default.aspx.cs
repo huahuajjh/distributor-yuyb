@@ -313,7 +313,8 @@ namespace TravelAgent.Web
                 }
                 else
                 {
-                    sbLine.Append("<dd class=\"xl_jia\">¥<font class=\"h18\">" + intMinPrice + "</font><font class=\"preqi\">起</font><font class=\"gzd\">关注度：" + row["gzd"] + "</font></dd>");
+                    sbLine.Append("<dd class=\"xl_jia\">¥<font class=\"h18\"></font><font class=\"preqi\">同行价</font>" + intMinPrice + "&nbsp</font><font class=\"preqi\">市场价</font>"+ LineBll.GetModel(Convert.ToInt32(row["Id"])).GetShopPrice() +"</dd>");
+                    sbLine.Append("<dd><font class=\"gzd\">关注度:+"+row["gzd"]+"</font></dd>");
                 }
                
                 sbLine.Append("</dl>");
@@ -357,7 +358,8 @@ namespace TravelAgent.Web
                 }
                 else
                 {
-                    sbLine.Append("<dd class=\"zyx_jia\">¥<font class=\"h18\">" + intMinPrice + "</font><font class=\"preqi\">起</font></dd>");
+                    sbLine.Append("<dd class=\"zyx_jia\">¥<font class=\"h18\">" + "</font><font class=\"preqi\">同行价</font></dd>" + intMinPrice);
+                    sbLine.Append("<dd class=\"zyx_jia\">¥<font class=\"h18\">" + "</font><font class=\"preqi\">市场价</font></dd>" + LineBll.GetModel(Convert.ToInt32(row["Id"])).GetShopPrice());
                 }
                 sbLine.Append("</dl>");
             }
@@ -469,13 +471,15 @@ namespace TravelAgent.Web
                 sbLine.Append("<em><a target=\"_blank\" href=\"/line/" + row["Id"] + ".html\" rel=\"nofollow\">"+row["lineName"]+"</a></em>");
                 int intNormalPrice = String.IsNullOrEmpty(row["priceContent"].ToString()) ? 0 : Convert.ToInt32(row["priceContent"].ToString().Split(',')[2]);
                 int intMinPrice = GetLineSpePrice(Convert.ToInt32(row["Id"]), intNormalPrice);
+                int marketPrice = LineBll.GetModel(Convert.ToInt32(row["Id"])).GetShopPrice();
                 if (intMinPrice == 0)
                 {
                     sbLine.Append("<span>电询</span>");
                 }
                 else
                 {
-                    sbLine.Append("<span>¥ " + intMinPrice + "<font class=\"preqi\">起</font></span>");
+                    sbLine.Append("<font style=\"font:10px\" class=\"preqi\">同行价</font></span>" + "<span>¥ " + intMinPrice);
+                    sbLine.Append("<font class=\"preqi\">市场价</font></span>" + "<span>¥ " + marketPrice); //add a shop price, written by jjh
                 }
                 sbLine.Append("</dd>");
                 sbLine.Append("</dl>");

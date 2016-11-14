@@ -1,10 +1,10 @@
-IF EXISTS(SELECT * FROM sysdatabases where name='ly2')
-DROP DATABASE ly2
-CREATE DATABASE ly2 ON PRIMARY --default,you can omit
+IF EXISTS(SELECT * FROM sysdatabases where name='distributor_ly2')
+DROP DATABASE distributor_ly2
+CREATE DATABASE distributor_ly2 ON PRIMARY --default,you can omit
 (
 	--data file configuration
 	name='ly2_data', --main data file's logic name,generally we add _data suffix after database name
-	filename='D:\developer_software\sqlserver2012\databasefiles\ly2_data.mdf', --main data file's physical name which ends with .mdf suffix
+	filename='F:\sqlserver2012\instance\MSSQL11.MSSQLSERVER\MSSQL\DATA\ly2_data.mdf', --main data file's physical name which ends with .mdf suffix
 	size=10MB, --the initial size of main data file
 	maxsize=500mb, --main data file's max increasement size
 	filegrowth=10% --main data file growth rate
@@ -13,13 +13,13 @@ LOG ON --log file configuration
 (
 	--the meaning of these arguments as same as the main data file
 	name='ly2_log',
-	filename='D:\developer_software\sqlserver2012\databasefiles\ly2_log.ldf',
+	filename='F:\sqlserver2012\instance\MSSQL11.MSSQLSERVER\MSSQL\DATA\ly2_log.ldf',
 	size=2mb,
 	filegrowth=1mb
 )
 GO
 
-USE [ly2]
+USE [distributor_ly2]
 GO
 /****** Object:  Table [dbo].[WebNav]    Script Date: 09/07/2016 13:12:23 ******/
 SET ANSI_NULLS ON

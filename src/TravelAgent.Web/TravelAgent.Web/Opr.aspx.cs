@@ -47,6 +47,10 @@ namespace TravelAgent.Web
                     {
                         strmsg = "很抱歉，你访问的产品已不存在，请联系网站客服人员！\"";
                     }
+                    else if (strTag.Equals("locked"))
+                    {
+                        strmsg = "很抱歉，你的账户未激活，请联系约游约呗科技！\"";
+                    }
                     else
                     {
                         strmsg = strTag;

@@ -36,6 +36,7 @@ namespace TravelAgent.Web.member
                         model.clubName = "club" + model.clubEmail;
                     }
                     model.clubPwd = Request["password"];
+                    model.isLock = 1;
                     
                     int userid = ClubBll.Add(model);
                     if (userid > 0)

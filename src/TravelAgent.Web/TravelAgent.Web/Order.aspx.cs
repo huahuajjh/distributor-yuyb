@@ -29,6 +29,9 @@ namespace TravelAgent.Web
         public TravelAgent.Model.Club CurClub;
         protected void Page_Load(object sender, EventArgs e)
         {
+            //check if the user login - write by jjh
+            CheckLogin();
+
             this.Title = "填写订单-" + Master.webinfo.WebName;
             int.TryParse(Request.QueryString["adult"], out adult);
             int.TryParse(Request.QueryString["child"], out child);
@@ -205,6 +208,16 @@ namespace TravelAgent.Web
                 }
             }
             return sbAttach.ToString();
+        }
+
+        private void CheckLogin()
+        {
+            string user_id = TravelAgent.Tool.CookieHelper.GetCookieValue("uid");
+
+            if(string.IsNullOrWhiteSpace(user_id))
+            {
+                Response.Redirect("/Opr.aspx?t=o&msg=locked");
+            }
         }
     }
 }

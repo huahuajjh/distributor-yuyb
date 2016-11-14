@@ -132,5 +132,21 @@ namespace TravelAgent.Model
             get { return _classId;}
             set { _classId=value;}
         }
+
+        /// <summary>
+        /// check if the user is locked, it is locked if it is 0 or normal | code was written by jjh
+        /// </summary>
+        /// <returns></returns>
+        public bool IsLocked()
+        {
+            if (_isLock == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

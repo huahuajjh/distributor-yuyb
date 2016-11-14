@@ -6,13 +6,18 @@
 <head>
 <%--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />--%>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>TravelCMS旅行社网站管理系统-后台登录</title>
+<title>约游约呗供应商管理后台-后台登录</title>
 <link href="/admin/css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/admin/js/jquery.js"></script>
 <%--<script type="text/javascript" src="/js/cloud.js" ></script>--%>
 <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    
 <script type="text/javascript">
-    $(function() {
+    $(function () {
+        //let the account input obtain focus, written by jjh
+        letAccInputGetFocus();
+
+        //cookie settings, comment was written by jjh, not function's implement
         var username = $.cookie('loginname') == null ? "" : $.cookie('loginname');
         var password = $.cookie('loginpwd') == null ? "" : $.cookie('loginpwd');
         var checkv = $.cookie('isremember') == "1";
@@ -24,55 +29,74 @@
         $(window).resize(function() {
             $('.loginbox').css({ 'position': 'absolute', 'left': ($(window).width() - 692) / 2+'px' });
         });
+
+        //login, written by jjh
         $("#btnLogin").click(function() {
-            var user = $.trim($("#user").val());
-            var pwd = $.trim($("#pwd").val());
-            var remember = $("#isRemember").attr("checked") ? 1 : 0;
-            if (user == "") {
-                alert("请输入用户名！");
-                $("#user").focus();
-                return false;
-            }
-            if (pwd == "") {
-                alert("请输入密码！");
-                $("#pwd").focus();
-                return false;
-            }
-            $.ajax({
-                type: "POST",
-                url: "/admin/data/Admin.ashx",
-                cache: false,
-                dataType: "json",
-                data: { user_name: user, user_pwd: pwd, check: remember },
-                success: function(state) {
-                    //提示删除成功消息
-                    if (state.msg == "true") {
-                        location.href = state.location;
-                        return false;
-                    }
-                    else if (state.msg == "islock") {
-                        alert("您的账号已被锁定，请联系运营商！");
-                        $("#user").val("");
-                        $("#pwd").val("");
-                        return false;
-                    }
-                    else {
-                        alert("用户名或者密码错误，请重新输入！");
-                        $("#pwd").val("");
-                        return false;
-                    }
-                }
-            })
-            return false;
+            login();
         })
+
+        //enter key event for login, written by jjh
+        document.onkeydown = function (e) {
+            if(e.keyCode == 13){
+                login();
+            }
+        }
+
     });
-//    function document.onkeydown() {
-//        if ((event.keyCode == 13) && (event.srcElement == document.getElementById("pwd"))) {
-//            var btn = document.getElementById("btnLogin");
-//            btn.focus();
-//            btn.click();
-//        }
-//    }  
+
+    //login function, written by jjh
+    function login() {
+        var user = $.trim($("#user").val());
+        var pwd = $.trim($("#pwd").val());
+        var remember = $("#isRemember").attr("checked") ? 1 : 0;
+
+        //input check
+        if (user == "") {
+            alert("请输入用户名！");
+            $("#user").focus();
+            return false; //why return a boolean value? this comment was written by jjh
+        }
+
+        if (pwd == "") {
+            alert("请输入密码！");
+            $("#pwd").focus();
+            return false; //why return a boolean value? this comment was written by jjh
+        }
+
+        //request login asyn
+        $.ajax({
+            type: "POST",
+            url: "/admin/data/Admin.ashx",
+            cache: false,
+            dataType: "json",
+            data: { user_name: user, user_pwd: pwd, check: remember },
+            success: function (state) {
+                //提示删除成功消息
+                if (state.msg == "true") {
+                    location.href = state.location;
+                    return false;
+                }
+                else if (state.msg == "islock") {
+                    alert("您的账号已被锁定，请联系运营商！");
+                    $("#user").val("");
+                    $("#pwd").val("");
+                    return false;
+                }
+                else {
+                    alert("用户名或者密码错误，请重新输入！");
+                    $("#pwd").val("");
+                    return false;
+                }
+            }
+        })
+        return false;
+    }
+
+    //make the account form element gets focus, written by jjh
+    function letAccInputGetFocus() {
+        document.getElementById("user").focus();
+    }
+
 </script>
 
 </head>
