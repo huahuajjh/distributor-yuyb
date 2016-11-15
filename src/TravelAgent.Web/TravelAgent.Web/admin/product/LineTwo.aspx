@@ -144,14 +144,14 @@
                                                 <td>儿童</td>
                                             </tr>
                                             <tr>
-                                                <td>门市价<span style="color:Red">*</span></td>
+                                                <td>市场价<span style="color:Red">*</span></td>
                                                 <td>
                                                     <input id="menshi_adult" name="menshi_adult" type="text" class="dfinput w50" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;);" /></td>
                                                 <td>
                                                     <input id="menshi_child" name="menshi_child" type="text" class="dfinput w50" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;);" /></td>
                                             </tr>
                                             <tr>
-                                                <td>销售价格<span style="color:Red">*</span></td>
+                                                <td>同行价<span style="color:Red">*</span></td>
                                                 <td>
                                                     <input id="price_adult" name="price_adult" type="text" class="dfinput w50"  onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;);" /></td>
                                                 <td>
@@ -294,14 +294,14 @@
                                                 <td>儿童</td>
                                             </tr>
                                             <tr>
-                                                <td>门市价<span style="color:Red">*</span></td>
+                                                <td>市场价<span style="color:Red">*</span></td>
                                                 <td>
                                                     <input id="txtMenshi_adult" name="txtMenshi_adult" type="text" runat="server" class="dfinput w50 required" min="1" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;);" /></td>
                                                 <td>
                                                     <input id="txtMenshi_child" name="txtMenshi_child" type="text" runat="server" class="dfinput w50 required" min="1" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;);" /></td>
                                             </tr>
                                             <tr>
-                                                <td>销售价格<span style="color:Red">*</span></td>
+                                                <td>同行价<span style="color:Red">*</span></td>
                                                 <td>
                                                     <input id="txtPrice_adult" name="txtPrice_adult" type="text" runat="server" class="dfinput w50 required" min="1" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;);" /></td>
                                                 <td>

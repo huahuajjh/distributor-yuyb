@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 body{background:#FFF; font:12px/1.5 tahoma, Arial,"宋体", SimSun, Helvetica, sans-serif; text-align:left; color:#333333;}
 html,body,div,span,img,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{border:0; outline: none; margin:0; padding:0;}
@@ -255,6 +255,7 @@ a:hover {text-decoration:underline; color:#ff6600;}
 	background-color:#FFF;
 	z-index:10000;
 	display:none;
+    box-shadow:1px 1px 5px grey;
 }
 
 .footer { background-color:#e8e9e8; margin-top:10px; overflow:hidden; height:auto;}

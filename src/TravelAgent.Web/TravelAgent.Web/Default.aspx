@@ -108,8 +108,8 @@
 		<b>1F</b>
 		<h2><%=holiday==null?"当季推荐":holiday.holidayName %></h2>  
 		<ul class="tabnav">
-			<li class="current" onmouseover="setContentTab1('one', 1, 3)" id="one1"><a href="javascript:void(0)" rel="nofollow">出境线路</a></li>
-			<li class="" onmouseover="setContentTab1('one', 2, 3)" id="one2"><a href="javascript:void(0)" rel="nofollow">国内线路</a></li>
+			<li class="current" onmouseover="setContentTab1('one', 1, 3)" id="one1"><a href="javascript:void(0)" rel="nofollow">常规旅行</a></li>
+			<li class="" onmouseover="setContentTab1('one', 2, 3)" id="one2"><a href="javascript:void(0)" rel="nofollow">纯玩旅行</a></li>
 			<li class="" onmouseover="setContentTab1('one', 3, 3)" id="one3"><a href="javascript:void(0)" rel="nofollow">周边短线</a></li>
 		</ul>
 		<a class="mor tbg1" title="推荐线路"></a>
@@ -147,7 +147,7 @@
     <div class="main2">
             <div class="title">
                     <b>2F</b>
-                    <h2><a href="/model/3_1.html" target="_blank">出境旅游</a></h2>
+                    <h2><a href="/model/3_1.html" target="_blank">常规旅行</a></h2>
                     <%--<span>出国度假，天天享特价！</span>--%>
                     <ul class="tabnav">
 				        <%=BindNavDest(Convert.ToInt32(TravelAgent.Tool.EnumSummary.State.推荐),10,1,3)%>
@@ -182,7 +182,7 @@
     <div class="main2">
             <div class="title">
                     <b>3F</b>
-                    <h2><a href="/model/2_2.html" target="_blank">国内旅游</a></h2>
+                    <h2><a href="/model/2_2.html" target="_blank">纯玩旅行</a></h2>
                     <%--<span>国内长线，深度体验！</span>--%>
                     <ul class="tabnav">
                     <%=BindNavDest(Convert.ToInt32(TravelAgent.Tool.EnumSummary.State.推荐),10,2,2)%>

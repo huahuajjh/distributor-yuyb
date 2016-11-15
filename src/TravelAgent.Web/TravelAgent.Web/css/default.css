@@ -896,6 +896,7 @@ a:hover {
 	background-color:#FFF;
 	z-index:10000;
 	display:none;
+    box-shadow:1px 1px 5px grey;
 }
 
 .place {
