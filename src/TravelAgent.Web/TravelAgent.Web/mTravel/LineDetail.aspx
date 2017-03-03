@@ -27,7 +27,7 @@
                                 <div class="linedetail_pre">
                                         <span><%=ShowJoinName(Line.ProIds)%></span>
                                         <span><%=Line.DayNumber %>日游</span>
-                                        <strong><%=ShowPrice(Line.PriceCommon.ToString())%></strong>
+                                        <strong><%=Line.PurchasePrice %></strong>
                                 </div>
                         </div>
 			                        <!--出发日期及余位-->

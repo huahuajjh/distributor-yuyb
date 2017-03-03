@@ -17,6 +17,7 @@ namespace TravelAgent.Web.mTravel
         private static readonly TravelAgent.BLL.Line LineBll = new TravelAgent.BLL.Line();
         private static readonly TravelAgent.BLL.Category CateBll = new TravelAgent.BLL.Category();
         private static readonly TravelAgent.BLL.DepartureCity CityBll = new TravelAgent.BLL.DepartureCity();
+        private static readonly TravelAgent.BLL.LineSpePrice SpePriceBll = new TravelAgent.BLL.LineSpePrice();
         protected void Page_Load(object sender, EventArgs e)
         {
             strNavName = "特价线路";
@@ -53,13 +54,21 @@ namespace TravelAgent.Web.mTravel
                 sbLine.Append("<div class=\"show_line_box\">");
                 sbLine.Append("<a href=\"LineDetail.aspx?id="+row["Id"]+"\" class=\"show_line_con\">");
                 sbLine.Append("<img src=\"" + row["linePic"] + "\" />");
+
+                int intNormalPrice = String.IsNullOrEmpty(row["priceContent"].ToString()) ? 0 : Convert.ToInt32(row["priceContent"].ToString().Split(',')[2]);
+                //获得市场价
+                int marketPrice = LineBll.GetModel(Convert.ToInt32(row["Id"])).GetShopPrice();
+                //获得同行价
+                int intMinPrice = GetLineSpePrice(Convert.ToInt32(row["Id"]), intNormalPrice);
+
                 if (row["priceCommon"].ToString().Equals("0") || row["priceCommon"].ToString().Equals(""))
                 {
                     sbLine.Append("<span class=\"show_line_jia\">电询</span>");
                 }
                 else
                 {
-                    sbLine.Append("<span class=\"show_line_jia\">¥&nbsp;" + row["priceCommon"] + "</span>");
+                    sbLine.Append("<span class=\"show_line_jia\">¥市场价&nbsp;" + intMinPrice + "&nbsp&nbsp" + "¥同行价&nbsp;" + marketPrice + "</span>");
+                    //sbLine.Append("<span class=\"show_line_jia\">¥同行价&nbsp;" + marketPrice + "</span>");
                 }
                 string name = "";
                 Model.DepartureCity city = CityBll.GetModel(Convert.ToInt32(row["cityId"]));
@@ -77,6 +86,39 @@ namespace TravelAgent.Web.mTravel
             }
             return sbLine.ToString();
         }
+
+        /// <summary>
+        /// 获取线路中成人特殊日期价格的最低价格
+        /// </summary>
+        /// <param name="lineId"></param>
+        /// <returns></returns>
+        public int GetLineSpePrice(int lineId, int intNormalPrice)
+        {
+            int intMinPrice = 0;
+            List<TravelAgent.Model.LineSpePrice> lstLineSpePrice = SpePriceBll.GetlstSpePriceByLineId(lineId).Where(t => t.tag == 1 && t.linePrice != "").ToList();
+            if (intNormalPrice == 0)
+            {
+                if (lstLineSpePrice.Count > 0)
+                {
+                    intMinPrice = Convert.ToInt32(lstLineSpePrice[0].linePrice.Split(',')[2]);
+                }
+            }
+            else
+            {
+                intMinPrice = intNormalPrice;
+            }
+
+            foreach (TravelAgent.Model.LineSpePrice p in lstLineSpePrice)
+            {
+                if (intMinPrice > Convert.ToInt32(p.linePrice.Split(',')[2]))
+                {
+                    intMinPrice = Convert.ToInt32(p.linePrice.Split(',')[2]);
+                }
+            }
+
+            return intMinPrice;
+        }
+
         /// <summary>
         /// 绑定底部导航
         /// </summary>

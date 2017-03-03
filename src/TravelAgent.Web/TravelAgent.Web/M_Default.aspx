@@ -85,7 +85,7 @@
 	<em>推荐产品</em>
 </div>
 <ul class="tejia_box">
-	<%=BindLine(5,Convert.ToInt32(TravelAgent.Tool.EnumSummary.State.推荐))%>
+	<%=BindLine(30,Convert.ToInt32(TravelAgent.Tool.EnumSummary.State.推荐))%>
 </ul>
 
 <!--页脚-->

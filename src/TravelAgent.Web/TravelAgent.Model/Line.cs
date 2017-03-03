@@ -46,6 +46,35 @@ namespace TravelAgent.Model
         private int _insureid;
         private string _holiday = "";
 
+        public int MarketPrice {
+            get
+            {
+                if (string.IsNullOrEmpty(PriceContent))
+                {
+                    return int.Parse(PriceContent.Split(',')[0]);
+                }
+                return -1;
+            }
+            set
+            {
+
+            }
+        }
+        public int PurchasePrice {
+            get
+            {
+                if (string.IsNullOrEmpty(PriceContent))
+                {
+                    return int.Parse(PriceContent.Split(',')[2]);
+                }
+                return -1;
+            }
+            set
+            {
+
+            }
+        }
+
         private TravelAgent.Model.Insure _insure;
         /// <summary>
         /// 线路编号

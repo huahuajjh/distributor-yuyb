@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Data;
+using System.Linq;
 using System.Text;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace TravelAgent.Web.mTravel
 {
@@ -20,7 +17,7 @@ namespace TravelAgent.Web.mTravel
         private static readonly TravelAgent.BLL.LineSpePrice SpePriceBll = new TravelAgent.BLL.LineSpePrice();
         protected void Page_Load(object sender, EventArgs e)
         {
-            int id;
+            int id = 0;
             if (Request.QueryString["id"] != null && int.TryParse(Request.QueryString["id"], out id))
             {
                 Line = LineBll.GetModel(id);
@@ -28,6 +25,11 @@ namespace TravelAgent.Web.mTravel
             if(Line == null)
             {
                 Response.Redirect("/Opr.aspx?t=error&msg=opr");
+            }
+            else
+            {
+                int normalPrice = String.IsNullOrEmpty(Line.PriceContent) ? 0 : Convert.ToInt32(Line.PriceContent.Split(',')[2]);
+                Line.PurchasePrice = GetLineSpePrice(id, normalPrice);
             }
         }
         /// <summary>
@@ -66,6 +68,39 @@ namespace TravelAgent.Web.mTravel
             }
             return strvalue;
         }
+
+        /// <summary>
+        /// 获取线路中成人特殊日期价格的最低价格
+        /// </summary>
+        /// <param name="lineId"></param>
+        /// <returns></returns>
+        public int GetLineSpePrice(int lineId, int intNormalPrice)
+        {
+            int intMinPrice = 0;
+            List<TravelAgent.Model.LineSpePrice> lstLineSpePrice = SpePriceBll.GetlstSpePriceByLineId(lineId).Where(t => t.tag == 1 && t.linePrice != "").ToList();
+            if (intNormalPrice == 0)
+            {
+                if (lstLineSpePrice.Count > 0)
+                {
+                    intMinPrice = Convert.ToInt32(lstLineSpePrice[0].linePrice.Split(',')[2]);
+                }
+            }
+            else
+            {
+                intMinPrice = intNormalPrice;
+            }
+
+            foreach (TravelAgent.Model.LineSpePrice p in lstLineSpePrice)
+            {
+                if (intMinPrice > Convert.ToInt32(p.linePrice.Split(',')[2]))
+                {
+                    intMinPrice = Convert.ToInt32(p.linePrice.Split(',')[2]);
+                }
+            }
+
+            return intMinPrice;
+        }
+
         /// <summary>
         /// 显示出发城市
         /// </summary>

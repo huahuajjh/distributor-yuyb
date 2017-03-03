@@ -16,6 +16,7 @@ namespace TravelAgent.Web
         //public TravelAgent.Model.WebInfo webinfo;
         private static readonly TravelAgent.BLL.Line LineBll = new TravelAgent.BLL.Line();
         private static readonly TravelAgent.BLL.Category CateBll = new TravelAgent.BLL.Category();
+        private static readonly TravelAgent.BLL.LineSpePrice SpePriceBll = new TravelAgent.BLL.LineSpePrice();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -58,13 +59,21 @@ namespace TravelAgent.Web
                 sbLine.Append("<p class=\"m-c-tit\"><code>" + row["lineName"] + "</code></p>");
                 sbLine.Append("<p class=\"m-c-txt\">");
                 sbLine.Append("<span>" + row["dayNumber"] + "日游</span>");
+
+                int intNormalPrice = String.IsNullOrEmpty(row["priceContent"].ToString()) ? 0 : Convert.ToInt32(row["priceContent"].ToString().Split(',')[2]);
+                //获得市场价
+                int marketPrice = LineBll.GetModel(Convert.ToInt32(row["Id"])).GetShopPrice();
+                //获得同行价
+                int intMinPrice = GetLineSpePrice(Convert.ToInt32(row["Id"]), intNormalPrice);
+
                 if (row["priceCommon"].ToString().Equals("0") || row["priceCommon"].ToString().Equals(""))
                 {
                     sbLine.Append("<em>电询</em>");
                 }
                 else
                 {
-                    sbLine.Append("<em>¥ " + row["priceCommon"] + "</em>");
+                    sbLine.Append("<em>同行价¥ " + intMinPrice + "</em>");
+                    sbLine.Append("<em>市场价¥ " + marketPrice + "</em>");
                 }
                 sbLine.Append("</p>");
                 sbLine.Append("</div>");
@@ -73,6 +82,41 @@ namespace TravelAgent.Web
             }
             return sbLine.ToString();
         }
+
+
+        /// <summary>
+        /// 获取线路中成人特殊日期价格的最低价格
+        /// </summary>
+        /// <param name="lineId"></param>
+        /// <returns></returns>
+        public int GetLineSpePrice(int lineId, int intNormalPrice)
+        {
+            int intMinPrice = 0;
+            List<TravelAgent.Model.LineSpePrice> lstLineSpePrice = SpePriceBll.GetlstSpePriceByLineId(lineId).Where(t => t.tag == 1 && t.linePrice != "").ToList();
+            if (intNormalPrice == 0)
+            {
+                if (lstLineSpePrice.Count > 0)
+                {
+                    intMinPrice = Convert.ToInt32(lstLineSpePrice[0].linePrice.Split(',')[2]);
+                }
+            }
+            else
+            {
+                intMinPrice = intNormalPrice;
+            }
+
+            foreach (TravelAgent.Model.LineSpePrice p in lstLineSpePrice)
+            {
+                if (intMinPrice > Convert.ToInt32(p.linePrice.Split(',')[2]))
+                {
+                    intMinPrice = Convert.ToInt32(p.linePrice.Split(',')[2]);
+                }
+            }
+
+            return intMinPrice;
+        }
+
+
         /// <summary>
         /// 绑定底部导航
         /// </summary>

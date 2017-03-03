@@ -68,7 +68,7 @@ namespace TravelAgent.Web.mTravel
                 {
                     TimeSpan ts = dtend.Subtract(dtstart);
                     int days = ts.Days;
-                    string strSpePrice = "";
+                    string strSpePrice = LineModel.PurchasePrice.ToString();                    
                     for (int i = 0; i <= days; i++)
                     {
                         DateTime dttemp = dtstart.AddDays(i);
@@ -78,28 +78,28 @@ namespace TravelAgent.Web.mTravel
                             string strCurPrice = LineModel.PriceContent.Split(',')[2] + "," + LineModel.PriceContent.Split(',')[3];
                             if (LineModel.PriceEditModel == 0)//天天发团
                             {
-                                strSpePrice = getSpePrice(LineModel.Id, dttemp.ToString("yyyy-MM-dd"), strCurPrice, listSpePrice);
+                                //strSpePrice = getSpePrice(LineModel.Id, dttemp.ToString("yyyy-MM-dd"), strCurPrice, listSpePrice);
                             }
                             else if (LineModel.PriceEditModel == 1)//按周
                             {
                                 if (TravelAgent.Tool.CommonOprate.IsContainValue(dayValue.ToString(), LineModel.PriceSetting))
                                 {
-                                    strSpePrice = getSpePrice(LineModel.Id, dttemp.ToString("yyyy-MM-dd"), strCurPrice, listSpePrice);
+                                    //strSpePrice = getSpePrice(LineModel.Id, dttemp.ToString("yyyy-MM-dd"), strCurPrice, listSpePrice);
                                 }
                                 else
                                 {
-                                    strSpePrice = getSpePrice(LineModel.Id, dttemp.ToString("yyyy-MM-dd"), "", listSpePrice);
+                                    //strSpePrice = getSpePrice(LineModel.Id, dttemp.ToString("yyyy-MM-dd"), "", listSpePrice);
                                 }
                             }
                             else if (LineModel.PriceEditModel == 2)//按号
                             {
                                 if (TravelAgent.Tool.CommonOprate.IsContainValue(dttemp.Day.ToString(), LineModel.PriceSetting))
                                 {
-                                    strSpePrice = getSpePrice(LineModel.Id, dttemp.ToString("yyyy-MM-dd"), strCurPrice, listSpePrice);
+                                    //strSpePrice = getSpePrice(LineModel.Id, dttemp.ToString("yyyy-MM-dd"), strCurPrice, listSpePrice);
                                 }
                                 else
                                 {
-                                    strSpePrice = getSpePrice(LineModel.Id, dttemp.ToString("yyyy-MM-dd"), "", listSpePrice);
+                                    //strSpePrice = getSpePrice(LineModel.Id, dttemp.ToString("yyyy-MM-dd"), "", listSpePrice);
                                 }
                             }
                             if (!strSpePrice.Equals(""))
